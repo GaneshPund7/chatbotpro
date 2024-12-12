@@ -15,38 +15,47 @@ export const MENU_SIDEBAR = [{
 },
  {
   heading: 'Bot'
-}, {
+}, 
+{
   title: 'My Bot',
   icon: 'profile-circle',
+},
+{
+  title: 'My Bot',
+  path: '/public-profile/profiles/creator'
+},
+{
+  title: 'Bot workflow',
+  path: '/public-profile/works'
+},
+{
+  title: 'Personalize',
+  path: '/public-profile/projects/3-columns'
+},
+{
+  title: 'Bot functionality 1',
+  path: '/public-profile/projects/2-columns'
+},
+{
+  title: 'Bot functionality 2',
+  path: '/public-profile/profiles/default'
+},
+{
+  title: 'LLMs',
+  path: '/public-profile/profiles/nft'
+},
+{
+  title: 'FAQ',
+  path: '/public-profile/profiles/company'
+}, 
   
   
-    children: [
-      {
-        title: 'My Bot',
-        path: '/public-profile/profiles/creator'
-      },{
-        title: 'Bot workflow',
-        path: '/public-profile/works'
-      },
-      {
-        title: 'Personalize',
-        path: '/public-profile/projects/3-columns'
-      },
-      {
-        title: 'Bot functionality 1',
-        path: '/public-profile/projects/2-columns'
-      },
-      {
-      title: 'Bot functionality 2',
-      path: '/public-profile/profiles/default'
-    },{
-      title: 'LLMs',
-      path: '/public-profile/profiles/nft'
-    },
-      {
-      title: 'FAQ',
-      path: '/public-profile/profiles/company'
-    }, 
+ 
+      
+      
+      
+     
+      
     //  {
     //   title: 'Blogger',
     //   path: '/public-profile/profiles/blogger'
@@ -101,10 +110,7 @@ export const MENU_SIDEBAR = [{
   //   title: 'Activity',
   //   path: '/public-profile/activity'
   // },
-   {
-    
-  }]
-},
+  
 //  {
 //   title: 'My Account',
 //   icon: 'setting-2',
