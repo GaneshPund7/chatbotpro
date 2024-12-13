@@ -3,13 +3,13 @@ import { KeenIcon } from '@/components';
 import { toAbsoluteUrl } from '@/utils';
 import { NavbarDropdown } from '@/partials/navbar';
 import { Dialog, DialogBody, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { About, CommunityBadges, Connections, Contributions, Projects, WorkExperience } from '@/pages/public-profile/profiles/default';
+import { About, CommunityBadges, Connections, Contributions, Projects, WorkExperience } from '@/pages/public-profile/my-bot/default';
 const ModalProfile = ({
   open,
   onOpenChange
 }) => {
   return <Fragment>
-      <style>
+      <style> 
         {`
           .modal-bg {
             background-image: url('${toAbsoluteUrl('/media/images/2600x1200/2.png')}');

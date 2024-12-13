@@ -1,70 +1,68 @@
-export const MENU_SIDEBAR = [
-  {
-    title: 'Dashboards',
-    icon: 'element-11',
-    children: [
-      {
-        title: 'Light Sidebar',
-        path: '/'
-      },
-      {
-        title: 'Dark Sidebar',
-        path: '/dark-sidebar'
-      }
-    ]
-  },
-
-  {
-    heading: 'Bot'
-  },
-  // {
-  //   title: 'My Bot',
-  //   icon: 'profile-circle',
-  // },
-  {
-    title: 'My Bot',
-    path: '/public-profile/profiles/creator'
-  },
-  {
-    title: 'Bot Workflow',
-    path: '/public-profile/profiles/blogger'
-  },
-  {
-    title: 'Personalize',
-    path: '/public-profile/profiles/feeds'
-  },
-  // {
-  //   title: 'Bot functionality 1',
-  //   path: '/public-profile/projects/2-columns'
-  // },
-  {
-    title: 'Bot functionality 1',
-    path: '/public-profile/profiles/gamer'
-  },
-  {
-    title: 'Bot functionality 2',
-    path: '/public-profile/profiles/default'
-  },
-  {
-    title: 'LLMs',
-    path: '/public-profile/profiles/nft'
-  },
-  {
-    title: 'Integrate Functionality',
-    path: '/public-profile/profiles/plain'
-  },
-  {
-    title: 'FAQ',
-    path: '/public-profile/profiles/company'
-  }
-
-  //  {
-  //   title: 'Blogger',
-  //   path: '/public-profile/profiles/blogger'
-  // }, {
-  //   title: 'CRM',
-  //   path: '/public-profile/profiles/crm'
-  // },
+export const MENU_SIDEBAR = [{
+  title: 'Dashboards',
+  icon: 'element-11',
+  children: [{
+    title: 'Light Sidebar',
+    path: '/'
+  }, {
+    title: 'Dark Sidebar',
+    path: '/dark-sidebar'
+  }]
+},
+{
+  title: 'My Bot',
+  path: '/public-profile/profiles/creator'
+},
+ {
+  heading: 'Bot'
+}, 
+{
+  title: 'My Bot',
+  icon: 'profile-circle',
+},
+{
+  title: 'My Bot',
+  path: '/public-profile/profiles/creator'
+},
+{
+  title: 'Bot workflow',
+  path: '/public-profile/works'
+},
+{
+  title: 'Personalize',
+  path: '/public-profile/projects/3-columns'
+},
+{
+  title: 'Bot functionality 1',
+  path: '/public-profile/projects/2-columns'
+},
+{
+  title: 'Bot functionality 2',
+  path: '/public-profile/profiles/default'
+},
+{
+  title: 'LLMs',
+  path: '/public-profile/profiles/nft'
+},
+{
+  title: 'FAQ',
+  path: '/public-profile/profiles/company'
+}, 
+  
+  
+ 
+      
+      
+      
+     
+      
+    //  {
+    //   title: 'Blogger',
+    //   path: '/public-profile/profiles/blogger'
+    // }, {
+    //   title: 'CRM',
+    //   path: '/public-profile/profiles/crm'
+    // },
   //    {
   //     title: 'More',
   //     collapse: true,
