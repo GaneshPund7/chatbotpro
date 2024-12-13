@@ -48,14 +48,7 @@ export const MENU_SIDEBAR = [{
   title: 'FAQ',
   path: '/public-profile/profiles/company'
 }, 
-  
-  
- 
-      
-      
-      
-     
-      
+   
     //  {
     //   title: 'Blogger',
     //   path: '/public-profile/profiles/blogger'
