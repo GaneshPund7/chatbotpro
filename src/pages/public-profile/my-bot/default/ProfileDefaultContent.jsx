@@ -116,7 +116,7 @@ const ProfileDefaultContent = () => {
     <div className="card">
       {items.map((item, index) => renderItem(item, index))}
       <div className="flex justify-end mt-4">
-      <Link to="/public-profile/profiles/nft" className="btn btn-primary text-lg font-medium text-white">
+      <Link to="/public-profile/my-bot/LLM-model-setup" className="btn btn-primary text-lg font-medium text-white">
       Save and Continue
         </Link>
 

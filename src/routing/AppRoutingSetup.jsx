@@ -16,16 +16,16 @@ const AppRoutingSetup = () => {
         <Route element={<Demo1Layout />}>
           <Route path="/" element={<DefaultPage />} />
           <Route path="/dark-sidebar" element={<Demo1DarkSidebarPage />} />
-          <Route path="/public-profile/my-bot/default" element={<ProfileDefaultPage />} />
-          <Route path="/public-profile/my-bot/creator" element={<ProfileCreatorPage />} />
-          <Route path="/public-profile/my-bot/company" element={<ProfileCompanyPage />} />
-          <Route path="/public-profile/my-bot/nft" element={<ProfileNFTPage />} />
-          <Route path="/public-profile/my-bot/personalize" element={<ProfileBloggerPage />} />
+          <Route path="/public-profile/my-bot/bot-functionality-2" element={<ProfileDefaultPage />} />
+          <Route path="/public-profile/my-bot/myBot" element={<ProfileCreatorPage />} />
+          <Route path="/public-profile/my-bot/bot-build" element={<ProfileCompanyPage />} />
+          <Route path="/public-profile/my-bot/LLM-model-setup" element={<ProfileNFTPage />} />
+          <Route path="/public-profile/my-bot/bot-workflow" element={<ProfileBloggerPage />} />
           <Route path="/public-profile/my-bot/crm" element={<ProfileCRMPage />} />
-          <Route path="/public-profile/my-bot/gamer" element={<ProfileGamerPage />} />
-          <Route path="/public-profile/my-bot/feeds" element={<ProfileFeedsPage />} />
+          <Route path="/public-profile/my-bot/bot-functionality-1" element={<ProfileGamerPage />} />
+          <Route path="/public-profile/my-bot/personalize" element={<ProfileFeedsPage />} />
           <Route path="/public-profile/my-bot/channel" element={<ProfileChannelPage/>} />
-          <Route path="/public-profile/my-bot/plain" element={<ProfilePlainPage />} />
+          <Route path="/public-profile/my-bot/knowledge-base-setup" element={<ProfilePlainPage />} />
           <Route path="/public-profile/my-bot/hooks" element={<HooksApiPage />} />
           <Route path="/public-profile/my-bot/modal" element={<ProfileModalPage />} />
           <Route path="/public-profile/projects/3-columns" element={<ProjectColumn3Page />} />

@@ -62,14 +62,11 @@ const HooksApiSettings = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex justify-end gap-4">
-                    <button className="btn btn-secondary" onClick={() => console.log('Cancel Clicked')}>
-                        Cancel
-                    </button>
-                    <button className="btn btn-primary" onClick={() => console.log('Save Clicked', { serviceProvider, secretKey, secretToken })}>
-                        Save
-                    </button>
-                </div>
+                <div className="flex justify-end mt-4">
+      <Link to="/public-profile/my-bot/bot-build" className="btn btn-primary text-lg font-medium text-white">
+      Save and Continue
+        </Link> 
+      </div>
             </div>
         </div>
     );

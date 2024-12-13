@@ -14,7 +14,7 @@ const CardWork = ({
       <img src={toAbsoluteUrl(`/media/images/600x400/${image}`)} className="w-full h-auto rounded-t-xl" alt="" />
 
       <div className="card-border card-rounded-b flex flex-col gap-2 px-5 py-4.5">
-        <Link to="/public-profile/profiles/feeds" className="text-lg font-medium text-gray-900 hover:text-primary">
+        <Link to="/public-profile/my-bot/personalize" className="text-lg font-medium text-gray-900 hover:text-primary">
           {title}
         </Link>
 
@@ -22,7 +22,7 @@ const CardWork = ({
           <div className="flex items-center grow">
             {/* <img src={toAbsoluteUrl(`/media/avatars/${authorAvatar}`)} className="rounded-full size-7 me-2" alt="" /> */}
 
-            <Link to="/public-profile/profiles/nft" className="text-2sm text-gray-800 hover:text-primary mb-px">
+            <Link to="/public-profile/my-bot/LLM-model-setup" className="text-2sm text-gray-800 hover:text-primary mb-px">
               {authorName}
             </Link>
           </div>
