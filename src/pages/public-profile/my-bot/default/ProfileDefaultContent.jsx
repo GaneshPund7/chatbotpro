@@ -93,6 +93,110 @@ const items = [
       </div>
     ),
   },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <Fragment>
+        Do you want the chatbot to ask for preferences like seat selection, meal preference, etc.?
+      </Fragment>
+    ),
+    actions: (
+      <div className="flex gap-2">
+        <button className="btn btn-sm btn-primary">Yes</button>
+        <button className="btn btn-sm btn-secondary">No</button>
+      </div>
+    ),
+  },
 ];
 
 const renderItem = (item, index) => {
@@ -115,7 +219,7 @@ const ProfileDefaultContent = () => {
   return (
     <div className="card">
       {items.map((item, index) => renderItem(item, index))}
-      <div className="flex justify-end mt-4">
+      <div className="flex justify-end mt-4 mb-4">
       <Link to="/public-profile/my-bot/LLM-model-setup" className="btn btn-primary text-lg font-medium text-white">
       Save and Continue
         </Link>
