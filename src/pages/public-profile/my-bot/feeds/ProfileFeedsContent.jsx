@@ -1,44 +1,93 @@
-import { Collaborate } from '../blogger';
-import { Statistics, Summary } from '../creator';
-import { Tags } from '../default';
-import { Post1, Post2, Post3, Post4 } from './blocks';
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+// import { KeenIcon } from '@/components';
+// import { CardProject, CardProjectRow } from '@/partials/cards';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 const ProfileFeedsContent = () => {
-  const data = [{
-    title: 'Connections',
-    value: '5.3k'
-  }, {
-    title: 'Uploads',
-    value: '28.9k'
-  }];
-  return <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-7.5">
-      <div className="col-span-1">
-        <div className="grid gap-5 lg:gap-7.5">
-          <Statistics data={data} />
+    const [webhooknameInput, setWebhookNameInput] = useState('CostaRicaHook');
+    
+  return <div className="card pb-2.5">
+  <div className="card-header" id="webhooks">
+    <h3 className="card-title"> Personalize Your Bot</h3>
+  </div>
+  <div className="card-body grid gap-5">
 
-          <Summary title="Profile" />
-
-          <Collaborate title="Open to work" />
-
-          <Tags title="Skills" />
-        </div>
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Bot Workflows Name</label>
+      <div className="grow">
+        <input type="text" className="input" placeholder="TravelBuddy" />
       </div>
-      <div className="col-span-2">
-        <div className="flex flex-col gap-5 lg:gap-7.5">
-          <Post1 />
-
-          <Post2 />
-
-          <Post3 />
-
-          <Post4 />
-
-          <div className="flex justify-center">
-            <a href="#" className="btn btn-link">
-              Show more posts
-            </a>
-          </div>
-        </div>
+    </div>
+{/* 
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Tone of Voice</label>
+      <div className="grow">
+        <input className="input" type="text" value={webhooknameInput} onChange={e => setWebhookNameInput(e.target.value)} /> 
       </div>
-    </div>;
+    </div> */}
+
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56"> Tone of Voice</label>
+      <div className="grow">
+        <Select defaultValue="1">
+          <SelectTrigger>
+            <SelectValue placeholder="Select" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="1">Friendly</SelectItem>
+            <SelectItem value="2">Push Webhooks</SelectItem>
+            <SelectItem value="3">Pipe Webhook</SelectItem> 
+            <SelectItem value="4">Plugin Webhooks</SelectItem> 
+          </SelectContent>
+        </Select>   
+      </div>
+    </div>
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+  <label className="form-label max-w-56">Avatar/Icon</label>
+  <div className="grow">
+    <input 
+      type="file" 
+      className="form-input" 
+      accept="image/*" 
+      aria-label="Upload your avatar"
+    />
+  </div>
+</div>
+
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Industry / Domain</label>
+      <div className="grow">
+        <Select defaultValue="1">
+          <SelectTrigger>
+            <SelectValue placeholder="Select" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="1">Travel</SelectItem>
+            <SelectItem value="2">Push Webhooks</SelectItem>
+            <SelectItem value="3">Pipe Webhook</SelectItem> 
+            <SelectItem value="4">Plugin Webhooks</SelectItem> 
+          </SelectContent>
+        </Select>   
+      </div>
+    </div>
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Purpose</label>
+      <div className="grow">
+        <input className="input" type="text" placeholder='Create Chatbot for Travel Assistance' value={webhooknameInput} onChange={e => setWebhookNameInput(e.target.value)} /> 
+      </div>
+    </div> 
+
+    <div className="flex justify-end">
+      {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
+      <Link to="/public-profile/profiles/gamer" className="btn btn-primary text-lg font-medium text-white">
+      Save and Continue
+        </Link>
+
+        
+    </div>
+  </div>
+</div>;
+    
 };
 export { ProfileFeedsContent };

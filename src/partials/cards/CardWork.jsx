@@ -14,7 +14,7 @@ const CardWork = ({
       <img src={toAbsoluteUrl(`/media/images/600x400/${image}`)} className="w-full h-auto rounded-t-xl" alt="" />
 
       <div className="card-border card-rounded-b flex flex-col gap-2 px-5 py-4.5">
-        <Link to="/public-profile/projects/3-columns" className="text-lg font-medium text-gray-900 hover:text-primary">
+        <Link to="/public-profile/profiles/feeds" className="text-lg font-medium text-gray-900 hover:text-primary">
           {title}
         </Link>
 
