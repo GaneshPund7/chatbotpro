@@ -1,63 +1,81 @@
-import { Network, Statistics } from '../company';
-import { Tags } from '../default';
-import { AboutMe, GettingStarted, OpenToWork } from './blocks';
+ 
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ModalProfile } from '@/partials/modals/profile';
+import { AboutMe} from './blocks';
+// import { KeenIcon } from '@/components';
+// import { CardProject, CardProjectRow } from '@/partials/cards';
+import { KeenIcon } from '@/components';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 const ProfilePlainContent = () => {
-  const items = [{
-    number: '249',
-    label: 'Connections'
-  }, {
-    number: '1.2k',
-    label: 'Uploads'
-  }, {
-    number: '1M+',
-    label: 'Gross Sales'
-  }, {
-    number: '27',
-    label: 'Author Rank'
-  }];
-  const data = [{
-    icon: 'abstract-41',
-    link: 'KeenThemes'
-  }, {
-    icon: 'crown-2',
-    link: 'Author Level 100'
-  }, {
-    icon: 'briefcase',
-    link: 'UI/UX Desiger'
-  }, {
-    icon: 'sms',
-    link: 'jenny@kteam.com'
-  }, {
-    icon: 'icon',
-    link: 'https://keenthemes.com'
-  }, {
-    icon: 'facebook',
-    link: 'keenthemes'
-  }];
-  return <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-7.5">
-      <div className="col-span-2">
-        <Statistics items={items} />
+    const [webhooknameInput, setWebhookNameInput] = useState('CostaRicaHook');
+    
+  return <div className="card pb-2.5">
+  <div className="card-header" id="webhooks">
+    <h3 className="card-title">Knowledge Base Setup (If Selected)</h3>
+    <KeenIcon icon="users" />
+ <button>hello    <ModalProfile /></button> 
+  </div>
+  <div className="card-body grid gap-5">
+
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">KB Name</label>
+      <div className="grow">
+        <input type="text" className="input" placeholder="TravelBuddy" />
+      </div>
+      
+    </div>
+
+    
+    <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+  <label className="form-label max-w-56">Upload Files</label>
+  <div className="grow">
+    <input 
+      type="file" 
+      className="form-input" 
+      accept="image/*" 
+      aria-label="Upload your avatar"
+    />
+  </div>
+</div>
+
+<div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Scrap URL</label>
+      <div className="grow">
+      <input type="text" className="input mb-5" placeholder="Enter Value" />
+      <input type="text" className="input mb-5" placeholder="Enter Value" />
+      <input type="text" className="input mb-5" placeholder="Enter Value" />
+      </div>
+      <div className="grow ms-10">
+      <label className="checkbox-group mb-7">
+          <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+          <span className="checkbox-label">Recursive</span>
+        </label>
+        <label className="checkbox-group mb-6">
+          <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+          <span className="checkbox-label">Recursive</span>
+        </label>
+        <label className="checkbox-group mb-6 mt-5">
+          <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+          <span className="checkbox-label">Recursive</span>
+        </label>
+  
       </div>
 
-      <div className="col-span-2">
-        <GettingStarted />
-      </div>
+      
+    </div>
 
-      <div className="col-span-1 flex">
-        <Network className="pb-3 grow" title="Profile" data={data} />
-      </div>
+    <div className="flex justify-end">
+      {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
+      <Link to="/public-profile/projects/2-columns" className="btn btn-primary text-lg font-medium text-white">
+      Save and Continue
+        </Link>
 
-      <div className="col-span-1 flex">
-        <AboutMe className="grow" />
-      </div>
-
-      <div className="col-span-1 flex">
-        <OpenToWork className="grow" title="Open to work" />
-      </div>
-
-      <div className="col-span-1 flex">
-        <Tags title="Skills" className="grow" />
-      </div>
-    </div>;
+        
+    </div>
+  </div>
+</div>;
+    
 };
 export { ProfilePlainContent };

@@ -34,7 +34,7 @@ const DropdownCrudItem1 = () => {
             <KeenIcon icon="copy" />
           </MenuIcon>
           <MenuTitle> 
-          <Link to="/public-profile/works" className="btn btn-link">
+          <Link to="/public-profile/profiles/blogger" className="btn btn-link">
           Create New
         </Link>
           </MenuTitle>

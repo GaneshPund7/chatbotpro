@@ -1,4 +1,4 @@
- 
+import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
 
 const items = [
@@ -116,7 +116,12 @@ const ProfileDefaultContent = () => {
     <div className="card">
       {items.map((item, index) => renderItem(item, index))}
       <div className="flex justify-end mt-4">
-        <button className="btn btn-primary btn-sm">Save and Continue</button>
+      <Link to="/public-profile/profiles/nft" className="btn btn-primary text-lg font-medium text-white">
+      Save and Continue
+        </Link>
+
+
+        
       </div>
     </div>
   );

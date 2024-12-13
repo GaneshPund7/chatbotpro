@@ -52,10 +52,10 @@ const ProfileNFTContent = () => {
 
     <div className="flex justify-end">
       {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
-      <Link to="/public-profile/projects/2-columns" className="btn btn-primary text-lg font-medium text-white">
+      <Link to="/public-profile/profiles/plain" className="btn btn-primary text-lg font-medium text-white">
       Save 
         </Link>
-        <Link to="/public-profile/projects/2-columns" className="btn btn-primary w-20 ms-5 text-lg font-medium text-white">
+        <Link to="#" className="btn btn-primary w-20 ms-5 text-lg font-medium text-white">
       test  
         </Link>
 

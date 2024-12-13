@@ -1,84 +1,107 @@
-import { Network } from '../company';
-import { Users } from '../creator';
-import { CommunityBadges } from '../default';
-import { About, Activity, FavoriteGames, NowPlaying, Statistics, Tournaments } from './blocks';
+import { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
+import { toAbsoluteUrl } from "@/utils/Assets";
+
 const ProfileGamerContent = () => {
-  const details = [{
-    image: 'online-game.svg',
-    number: '164',
-    label: 'Tournaments'
-  }, {
-    image: 'gamer-coin.svg',
-    number: '73.2%',
-    label: 'Game Win-rate'
-  }, {
-    image: 'gamer-diamond.svg',
-    number: '257',
-    label: 'Duels Played'
-  }, {
-    image: 'gamer-trophy.svg',
-    number: '19',
-    label: 'Trophies'
-  }];
-  const items = [{
-    image: '300-27.png'
-  }, {
-    image: '300-1.png'
-  }, {
-    image: '300-2.png'
-  }, {
-    image: '300-3.png'
-  }, {
-    image: '300-5.png'
-  }, {
-    image: '300-23.png'
-  }, {
-    image: '300-6.png'
-  }, {
-    image: '300-11.png'
-  }, {
-    image: '300-12.png'
-  }];
-  const data = [{
-    icon: 'dribbble',
-    link: 'jennynft'
-  }, {
-    icon: 'facebook',
-    link: 'nftmania'
-  }, {
-    icon: 'twitter',
-    link: 'jennynft'
-  }, {
-    icon: 'youtube',
-    link: 'jennyklabber'
-  }];
-  return <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-7.5">
-      <div className="col-span-2 lg:col-span-3">
-        <Statistics details={details} />
-      </div>
+  const [kbName, setKbName] = useState("");
+  const [apiToken, setApiToken] = useState("");
+  const [fileUploads, setFileUploads] = useState([]);
+  const [scrapUrl, setScrapUrl] = useState("");
 
-      <div className="col-span-1">
-        <div className="flex flex-col gap-5 lg:gap-7.5">
-          <FavoriteGames />
+  const handleSave = () => {
+    console.log("Knowledge Base Name:", kbName);
+    console.log("File Uploads:", fileUploads);
+    console.log("Scraped URL:", scrapUrl);
+    console.log("API Token:", apiToken);
+    alert("Settings saved successfully!");
+  };
 
-          <About />
+  return (
+    <Fragment>
+      <style>
+        {`
+          .branding-bg {
+            background-image: url('${toAbsoluteUrl("/media/images/2600x1200/bg-5.png")});
+          }
+          .dark .branding-bg {
+            background-image: url('${toAbsoluteUrl("/media/images/2600x1200/bg-5-dark.png")});
+          }
+        `}
+      </style>
 
-          <CommunityBadges title="Badges" />
+      <div className="card min-w-full">
+        <div className="card-header gap-2">
+          <h3 className="card-title">Setup Details</h3>
+        </div>
+        <div className="card-body lg:py-7.5 py-5">
+          <div className="flex flex-col gap-5">
+            {/* Knowledge Base Setup */}
+            <div className="flex flex-col gap-2">
+              <h4 className="font-bold">Select Functionality</h4>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-input"
+                  value={kbName}
+                  onChange={(e) => setKbName(e.target.value)}
+                />
+              </div>
+              <div className="flex flex-wrap justify-between gap-5">
+                <div className="flex flex-col gap-5 max-w-96 w-full">
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Answer Frequently Asked Questions (FAQs)</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Help with product/service bookings</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Provide personalized recommendation</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Track orders or bookings</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+                  <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+                    <label className="form-label max-w-56">Other custom functionality</label>
+                    <div className="grow">
+                      <input type="text" className="input" placeholder="TravelBuddy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
 
-          <Users title="Floyd’s Team" items={items} />
-
-          <Network title="Network" data={data} />
+            {/* Save Button */}
+            <div className="flex justify-end">
+                      <div className="flex justify-end">
+              <Link to="/public-profile/profiles/default" className="btn btn-primary text-lg font-medium text-white ">
+              Save Settings
+        </Link>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="col-span-2">
-        <div className="flex flex-col gap-5 lg:gap-7.5">
-          <Tournaments />
-
-          <NowPlaying />
-
-          <Activity />
-        </div>
-      </div>
-    </div>;
+    </Fragment>
+  );
 };
+
 export { ProfileGamerContent };
