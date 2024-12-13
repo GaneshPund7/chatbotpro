@@ -8,6 +8,8 @@ import { RequireAuth } from '@/auth/RequireAuth';
 import { Demo1Layout } from '@/layouts/demo1';
 import { ErrorsRouting } from '@/errors';
 import { AuthenticationWelcomeMessagePage, AuthenticationAccountDeactivatedPage, AuthenticationGetStartedPage } from '@/pages/authentication';
+import { HooksApiPage } from '../pages/public-profile/my-bot/hooks';
+import { ProfileChannelContent, ProfileChannelPage } from '../pages/public-profile/my-bot/channel';
 const AppRoutingSetup = () => {
   return <Routes>
       <Route element={<RequireAuth />}>
@@ -22,7 +24,9 @@ const AppRoutingSetup = () => {
           <Route path="/public-profile/profiles/crm" element={<ProfileCRMPage />} />
           <Route path="/public-profile/profiles/gamer" element={<ProfileGamerPage />} />
           <Route path="/public-profile/profiles/feeds" element={<ProfileFeedsPage />} />
+          <Route path="/public-profile/profiles/channel" element={<ProfileChannelPage/>} />
           <Route path="/public-profile/profiles/plain" element={<ProfilePlainPage />} />
+          <Route path="/public-profile/profiles/hooks" element={<HooksApiPage />} />
           <Route path="/public-profile/profiles/modal" element={<ProfileModalPage />} />
           <Route path="/public-profile/projects/3-columns" element={<ProjectColumn3Page />} />
           <Route path="/public-profile/projects/2-columns" element={<ProjectColumn2Page />} />

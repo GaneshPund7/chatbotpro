@@ -460,9 +460,19 @@ export const MENU_MEGA = [
                 path: '/public-profile/profiles/feeds'
               },
               {
+                title: 'Channel',
+                icon: 'book',
+                path: '/public-profile/profiles/channel'
+              },
+              {
                 title: 'Plain',
                 icon: 'files',
                 path: '/public-profile/profiles/plain'
+              },
+              {
+                title: 'Hooks',
+                icon: 'files',
+                path: '/public-profile/profiles/hooks'
               },
               {
                 title: 'Modal',
@@ -638,6 +648,10 @@ export const MENU_MEGA = [
               {
                 title: 'Plain',
                 path: '/account/home/settings-plain'
+              },
+              {
+                title: 'hooks',
+                path: '/account/home/settings-hooks'
               },
               {
                 title: 'Modal',
