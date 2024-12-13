@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { Link } from 'react-router-dom';
 import ReactFlow, {
   addEdge,
   Background,
@@ -201,6 +202,7 @@ const ProfileCompanyContent = () => {
           </Button>
           <span style={{ fontSize: "12px", marginTop: "5px" }}>Input</span>
         </div>
+        
   
         {/* Output Node */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginRight: 10 }}>
@@ -237,6 +239,11 @@ const ProfileCompanyContent = () => {
           </Button>
           <span style={{ fontSize: "12px", marginTop: "5px" }}>Button</span>
         </div>
+        <div className="flex justify-end mt-4">
+      <Link to="/public-profile/my-bot/channel" className="btn btn-primary text-lg font-medium text-white">
+      Save and Continue
+        </Link> 
+      </div>
       </div>
     </div>
   
@@ -256,7 +263,7 @@ const ProfileCompanyContent = () => {
     </div>
     
     <ToastContainer position="top-right" autoClose={3000} />
- 
+   
   
   </div>
   

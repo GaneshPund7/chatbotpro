@@ -68,7 +68,7 @@ const ProfilePlainContent = () => {
 
     <div className="flex justify-end">
       {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
-      <Link to="/public-profile/projects/2-columns" className="btn btn-primary text-lg font-medium text-white">
+      <Link to="/public-profile/my-bot/hooks" className="btn btn-primary text-lg font-medium text-white">
       Save and Continue
         </Link>
 

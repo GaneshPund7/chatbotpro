@@ -92,7 +92,7 @@ const ProfileGamerContent = () => {
             {/* Save Button */}
             <div className="flex justify-end">
                       <div className="flex justify-end">
-              <Link to="/public-profile/profiles/default" className="btn btn-primary text-lg font-medium text-white ">
+              <Link to="/public-profile/my-bot/bot-functionality-2" className="btn btn-primary text-lg font-medium text-white ">
               Save Settings
         </Link>
             </div>
