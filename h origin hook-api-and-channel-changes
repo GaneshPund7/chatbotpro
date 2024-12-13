@@ -1,0 +1,51 @@
+[33mcommit 5e4e434e44c624d364b701adf0c92dcd8ea33b14[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhook-api-and-channel-changes[m[33m, [m[1;31morigin/hook-api-and-channel-changes[m[33m)[m
+Author: piyukothawade <piyukothawade789@gmail.com>
+Date:   Fri Dec 13 15:25:12 2024 +0530
+
+    hook api and channel page added
+
+[33mcommit 350f601cc7df2fd1ed146544dd675c2d58b97b3c[m[33m ([m[1;31morigin/abc-new-changes[m[33m, [m[1;32mabc-new-changes[m[33m)[m
+Merge: e86239d 60c8c62
+Author: piyukothawade <piyukothawade789@gmail.com>
+Date:   Fri Dec 13 13:21:10 2024 +0530
+
+    new changes
+
+[33mcommit 60c8c62ec8cb03d2d9a0c80d17ce157469a2c119[m
+Author: Ganeshpund7 <ganeshpund0000@gmail.com>
+Date:   Fri Dec 13 13:16:27 2024 +0530
+
+    plain changes
+
+[33mcommit 2ffd49d0469f2536f778c75735d4102cd02c966c[m
+Author: Ganeshpund7 <ganeshpund0000@gmail.com>
+Date:   Fri Dec 13 13:16:06 2024 +0530
+
+    changes in routing
+
+[33mcommit e86239d2c7a3f95ff3823cd0730a218142cf38c8[m
+Author: piyukothawade <piyukothawade789@gmail.com>
+Date:   Fri Dec 13 13:01:23 2024 +0530
+
+    rename changes
+
+[33mcommit 3b4f30ea795d13f989c1ec346cfeb6d5178a2a6b[m[33m ([m[1;31morigin/Ganeshchanges[m[33m, [m[1;32mabc_changes[m[33m, [m[1;32mabc-changes[m[33m)[m
+Merge: 188d131 23a0c48
+Author: Piyusha Kothawade <82207419+piyukothawade@users.noreply.github.com>
+Date:   Thu Dec 12 22:54:35 2024 +0530
+
+    Merge pull request #1 from GaneshPund7/abc_changes
+    
+    changes in menu.config
+
+[33mcommit 23a0c4874a4ed37f688094119112f01dfa7bf1ab[m[33m ([m[1;31morigin/abc_changes[m[33m)[m
+Author: piyukothawade <piyukothawade789@gmail.com>
+Date:   Thu Dec 12 22:53:03 2024 +0530
+
+    changes in menu.config
+
+[33mcommit 188d131a8c1e3a355a3173d46c6c4850c982393b[m[33m ([m[1;32mmain[m[33m)[m
+Author: Ganeshpund7 <ganeshpund0000@gmail.com>
+Date:   Thu Dec 12 16:51:45 2024 +0530
+
+    first

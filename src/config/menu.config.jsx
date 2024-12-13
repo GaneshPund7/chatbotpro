@@ -9,44 +9,46 @@ export const MENU_SIDEBAR = [{
     path: '/dark-sidebar'
   }]
 },
-{
-  title: 'My Bot',
-  path: '/public-profile/profiles/creator'
-},
+
  {
   heading: 'Bot'
 }, 
+
 {
   title: 'My Bot',
-  icon: 'profile-circle',
-},
-{
-  title: 'My Bot',
-  path: '/public-profile/profiles/creator'
+  path: '/public-profile/my-bot/myBot'
 },
 {
   title: 'Bot workflow',
-  path: '/public-profile/works'
+  path: '/public-profile/my-bot/b'
 },
 {
   title: 'Personalize',
-  path: '/public-profile/projects/3-columns'
+  path: '/public-profile/my-bot/personalize'
 },
 {
   title: 'Bot functionality 1',
-  path: '/public-profile/projects/2-columns'
+  path: '/public-profile/my-bot/feeds'
 },
 {
   title: 'Bot functionality 2',
-  path: '/public-profile/profiles/default'
+  path: '/public-profile/my-bot/default'
 },
 {
   title: 'LLMs',
-  path: '/public-profile/profiles/nft'
+  path: '/public-profile/my-bot/nft'
 },
 {
-  title: 'FAQ',
-  path: '/public-profile/profiles/company'
+  title: 'Hooks Api',
+  path: '/public-profile/my-bot/hooks'
+}, 
+{
+  title: 'Build Bot',
+  path: '/public-profile/my-bot/company'
+}, 
+{
+  title: 'Channel',
+  path: '/public-profile/my-bot/channel'
 }, 
   
   
