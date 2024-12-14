@@ -184,7 +184,7 @@ const ProfileCompanyContent = () => {
         justifyContent: "space-between",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div className="flex justify-center">
         {/* Input Node */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginRight: 10 }}>
           <Button
@@ -239,12 +239,26 @@ const ProfileCompanyContent = () => {
           </Button>
           <span style={{ fontSize: "12px", marginTop: "5px" }}>Button</span>
         </div>
-        <div className="flex justify-end mt-4">
-      <Link to="/public-profile/my-bot/channel" className="btn btn-primary text-lg font-medium text-white">
-      Save and Continue
+       
+      </div>
+      <div className="flex justify-end">
+      <div className="mt-4 ms-2">
+      <Link to="#" className="btn btn-primary btn-sm text-lg font-medium text-white">
+      Save
+        </Link> 
+      </div>
+      <div className="mt-4 ms-2">
+      <Link to="#" className="btn btn-primary btn-sm text-lg font-medium text-white">
+      Test
+        </Link> 
+      </div>
+      <div className="mt-4 ms-2">
+      <Link to="/public-profile/my-bot/channel" className="btn btn-primary btn-sm text-lg font-medium text-white">
+      Deploy
         </Link> 
       </div>
       </div>
+    
     </div>
   
     <div style={{ flex: 1 }}>

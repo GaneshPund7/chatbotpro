@@ -15,7 +15,7 @@ const ProfilePlainContent = () => {
   <div className="card-header" id="webhooks">
     <h3 className="card-title">Knowledge Base Setup (If Selected)</h3>
     <KeenIcon icon="users" />
-    <Link > </Link>
+     
   </div>
   <div className="card-body grid gap-5">
 
