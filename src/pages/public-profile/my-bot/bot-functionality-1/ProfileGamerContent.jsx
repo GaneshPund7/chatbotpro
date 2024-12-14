@@ -78,12 +78,44 @@ const ProfileGamerContent = () => {
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+                  <div className="flex flex-col gap-2.5">
+                    <label className="checkbox-group">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <span className="checkbox-label">Send notifications or reminders</span>
+                    </label>
+                  </div>
+
                   <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
                     <label className="form-label max-w-56">Other custom functionality</label>
                     <div className="grow">
                       <input type="text" className="input" placeholder="TravelBuddy" />
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>

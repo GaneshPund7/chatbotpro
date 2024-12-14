@@ -2,20 +2,33 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Modal } from '@/components/Modal';
 import { ModalProfile } from '@/partials/modals/profile';
 import { AboutMe} from './blocks';
-// import { KeenIcon } from '@/components';
-// import { CardProject, CardProjectRow } from '@/partials/cards';
+
 import { KeenIcon } from '@/components';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 const ProfilePlainContent = () => {
     const [webhooknameInput, setWebhookNameInput] = useState('CostaRicaHook');
+    const [serviceProvider, setServiceProvider] = useState('ABC Provider');
+    const [secretKey, setSecretKey] = useState('TKNasdf0001');
+    const [secretToken, setSecretToken] = useState('TKNasdf0001')
+    const [isModalOpen, setIsModalOpen] = useState(false); 
+
+    const handleSaveClick = () => {
+      setIsModalOpen(true);  
+  };
+
+  const handleModalClose = () => {
+      setIsModalOpen(false);  
+  };
+
     
   return <div className="card pb-2.5">
   <div className="card-header" id="webhooks">
     <h3 className="card-title">Knowledge Base Setup (If Selected)</h3>
-    <KeenIcon icon="users" />
-     
+  
+    <KeenIcon icon="setting-2" onClick={handleSaveClick} />
   </div>
   <div className="card-body grid gap-5">
 
@@ -75,6 +88,114 @@ const ProfilePlainContent = () => {
         
     </div>
   </div>
+
+  <Modal open={isModalOpen} onClose={handleModalClose} className="modal-class">
+    <div
+        className="modal-content p-5 bg-white rounded-md shadow-lg"
+        style={{ maxWidth: '800px', margin: '0 auto' }} 
+    >
+ 
+ <div className="card pb-2.5">
+            {/* <div className="card-header" id="api-settings">
+                <h3 className="card-title">Hooks API Setting (If Selected)</h3>
+           
+            </div> */}
+
+            <div className="card-body grid gap-5">
+                {/* Service Provider */}
+                <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+                    <label className="form-label max-w-56">Embedding Model</label>
+                    <div className="grow">
+                        <Select onValueChange={setServiceProvider} defaultValue={serviceProvider}>
+                            <SelectTrigger>
+                                <SelectValue placeholder="Select Service Provider" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="text-embedding-ada-002">text-embedding-ada-002</SelectItem>
+                                <SelectItem value="text-embedding-ada-002">text-embedding-ada-002</SelectItem>
+                                <SelectItem value="text-embedding-ada-002">text-embedding-ada-002</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
+                </div>
+
+                {/* Secret Key */}
+                <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+                    <label className="form-label max-w-56">Secret Key</label>
+                    <div className="grow">
+                        <input
+                            type="text"
+                            className="input"
+                            placeholder="Enter Secret Key"
+                            value={secretKey}
+                            onChange={(e) => setSecretKey(e.target.value)}
+                        />
+                    </div>
+                </div>
+                <div className="flex items-center gap-2.5">
+                <label className="form-label max-w-56">Chunk Size</label>
+                  <div className="grow flex items-center gap-2">
+                    <div className="relative h-4 w-full bg-gray-200 rounded">
+                     <div
+                         className="absolute h-full bg-blue-500 rounded"
+                         style={{ width: `${(1024 / 1024) * 70}%` }} // 100% width
+                         ></div>
+                      </div>
+                      <div className="text-sm text-gray-600">1024 </div>
+                  </div>
+                </div>
+       
+              <div className="flex items-center gap-2.5">
+                 <label className="form-label max-w-56">Chunk Overlap</label>
+                   <div className="grow flex items-center gap-2">
+                    <div className="relative h-4 w-full bg-gray-200 rounded">
+                      <div
+                         className="absolute h-full bg-blue-500 rounded"
+                        style={{ width: `${(1024 / 1024) * 20}%` }} // 100% width
+                       ></div>
+                     </div>
+                   <div className="text-sm text-gray-600">100 </div>
+               </div>
+              </div>
+
+                {/* Secret Token */}
+                <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+                    <label className="form-label max-w-56">API Key</label>
+                    <div className="grow">
+                        <input
+                            type="text"
+                            className="input"
+                            placeholder="Enter API Key"
+                            value={secretToken}
+                            onChange={(e) => setSecretToken(e.target.value)}
+                        />
+                    </div>
+                </div>
+
+                {/* Action Buttons */}
+                
+            </div>
+        </div>
+
+        <div className="flex justify-end gap-4 mt-5">
+            <button
+                className="btn btn-secondary"
+                onClick={handleModalClose}
+            >
+                Close
+            </button>
+            <div className="flex justify-end  mb-4">
+      <Link to="/public-profile/my-bot/hooks" className="btn btn-primary text-lg font-medium text-white">
+     Save
+        </Link>
+
+
+        
+      </div>
+            
+        </div>
+    </div>
+</Modal>
 </div>;
     
 };

@@ -1,20 +1,21 @@
 import { useState } from 'react';
-import { Modal } from '@/components/Modal'; // Assuming the Modal component is in the components directory
+import { Modal } from '@/components/Modal';  
 import { KeenIcon } from '@/components';
+import { Link } from 'react-router-dom';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const HooksApiSettings = () => {
     const [serviceProvider, setServiceProvider] = useState('ABC Provider');
     const [secretKey, setSecretKey] = useState('TKNasdf0001');
     const [secretToken, setSecretToken] = useState('TKNasdf0001');
-    const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
+    const [isModalOpen, setIsModalOpen] = useState(false); 
 
     const handleSaveClick = () => {
-        setIsModalOpen(true); // Open modal on button click
+        setIsModalOpen(true);  
     };
 
     const handleModalClose = () => {
-        setIsModalOpen(false); // Close modal
+        setIsModalOpen(false);  
     };
 
     return (
@@ -96,15 +97,15 @@ const HooksApiSettings = () => {
             >
                 No
             </button>
-            <button
-                className="btn btn-primary"
-                onClick={() => {
-                    setIsModalOpen(false);
-                    console.log("Saved!");
-                }}
-            >
-                Yes
-            </button>
+            <div className="flex justify-end mb-4">
+      <Link to="/public-profile/my-bot/bot-build" className="btn btn-primary text-lg font-medium text-white">
+     yes
+        </Link>
+
+
+        
+      </div>
+            
         </div>
     </div>
 </Modal>

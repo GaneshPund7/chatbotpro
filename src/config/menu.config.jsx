@@ -20,7 +20,7 @@ export const MENU_SIDEBAR = [{
 },
 {
   title: 'Bot workflow',
-  path: '/public-profile/my-bot/b'
+  path: '/public-profile/my-bot/bot-workflow'
 },
 {
   title: 'Personalize',
@@ -28,23 +28,27 @@ export const MENU_SIDEBAR = [{
 },
 {
   title: 'Bot functionality 1',
-  path: '/public-profile/my-bot/feeds'
+  path: '/public-profile/my-bot/bot-functionality-1'
 },
 {
   title: 'Bot functionality 2',
-  path: '/public-profile/my-bot/default'
+  path: '/public-profile/my-bot/bot-functionality-2'
 },
 {
   title: 'LLMs',
-  path: '/public-profile/my-bot/nft'
+  path: '/public-profile/my-bot/LLM-model-setup'
 },
+{
+  title: 'Integrate Functionality',
+  path: '/public-profile/my-bot/knowledge-base-setup'
+}, 
 {
   title: 'Hooks Api',
   path: '/public-profile/my-bot/hooks'
 }, 
 {
   title: 'Build Bot',
-  path: '/public-profile/my-bot/company'
+  path: '/public-profile/my-bot/bot-build'
 }, 
 {
   title: 'Channel',
