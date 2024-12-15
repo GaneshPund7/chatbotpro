@@ -109,12 +109,12 @@ const ProfileGamerContent = () => {
                     </label>
                   </div>
 
-                  <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
-                    <label className="form-label max-w-56">Other custom functionality</label>
-                    <div className="grow">
-                      <input type="text" className="input" placeholder="TravelBuddy" />
-                    </div>
-                  </div>
+                  <div className="flex items-center gap-3.5">
+                  <label className="form-label w-auto">Other custom functionality</label>
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="TravelBuddy" />
+                </div>
+
+
                   
                 </div>
               </div>

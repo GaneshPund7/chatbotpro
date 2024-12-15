@@ -3,9 +3,14 @@ import { useLanguage } from '@/i18n';
 import { KeenIcon, Menu, MenuItem, MenuToggle } from '@/components';
 import { CommonAvatars } from '@/partials/common';
 import { DropdownCrud1, DropdownCrudItem1 } from '@/partials/dropdowns/general';
+import { useState } from 'react';
 
 const ProfileCreatorContent = () => {
   const { isRTL } = useLanguage();
+  const [filterText, setFilterText] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+
   const items = [
     {
       name: 'Travel Insuranc',
@@ -46,8 +51,64 @@ const ProfileCreatorContent = () => {
       dueDate: '10 Sep, 2024',
       status: 'Stop',
       progress: { variant: '', value: 100 }
+    },
+    {
+      name: 'FinTech ',
+      team: {
+        group: [
+          { filename: '300-1.png' },
+          { filename: '300-2.png' },
+          { fallback: 'M', variant: 'text-danger-inverse ring-danger-light bg-danger' }
+        ]
+      },
+      dueDate: '10 Sep, 2024',
+      status: 'Stop',
+      progress: { variant: '', value: 100 }
+    },
+    {
+      name: 'FinTech ',
+      team: {
+        group: [
+          { filename: '300-1.png' },
+          { filename: '300-2.png' },
+          { fallback: 'M', variant: 'text-danger-inverse ring-danger-light bg-danger' }
+        ]
+      },
+      dueDate: '10 Sep, 2024',
+      status: 'Stop',
+      progress: { variant: '', value: 100 }
+    },
+    {
+      name: 'FinTech ',
+      team: {
+        group: [
+          { filename: '300-1.png' },
+          { filename: '300-2.png' },
+          { fallback: 'M', variant: 'text-danger-inverse ring-danger-light bg-danger' }
+        ]
+      },
+      dueDate: '10 Sep, 2024',
+      status: 'Stop',
+      progress: { variant: '', value: 100 }
     }
+
+    
+    
   ];
+
+  const filteredItems = items.filter((item) =>
+    item.name.toLowerCase().includes(filterText.toLowerCase())
+  );
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   const renderItem = (item, index) => {
     return (
@@ -98,31 +159,25 @@ const ProfileCreatorContent = () => {
 
   return (
     <div className="card">
-      <div className="card-header">
+      <div className="card-header flex justify-between items-center">
         <h3 className="card-title">My Bot</h3>
-
-        <Menu>
-          <MenuItem
-            toggle="dropdown"
-            trigger="click"
-            dropdownProps={{
-              placement: isRTL() ? 'bottom-start' : 'bottom-end',
-              modifiers: [
-                {
-                  name: 'offset',
-                  options: {
-                    offset: isRTL() ? [0, -10] : [0, 10] // [skid, distance]
-                  }
-                }
-              ]
+        <div className="flex gap-2">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={filterText}
+            onChange={(e) => setFilterText(e.target.value)}
+            className="input input-bordered w-72"
+          />
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              console.log('Create New Bot clicked!');
             }}
           >
-            <MenuToggle className="btn btn-sm btn-icon btn-light btn-clear">
-              <KeenIcon icon="dots-vertical" />
-            </MenuToggle>
-            {DropdownCrud1()}
-          </MenuItem>
-        </Menu>
+            Create New Bot
+          </button>
+        </div>
       </div>
 
       <div className="card-table scrollable-x-auto">
@@ -146,11 +201,28 @@ const ProfileCreatorContent = () => {
           </thead>
 
           <tbody>
-            {items.map((item, index) => {
+            {currentItems.map((item, index) => {
               return renderItem(item, index);
             })}
           </tbody>
         </table>
+      </div>
+
+      <div className="card-footer flex justify-between items-center">
+        <span className="text-sm">
+          Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, filteredItems.length)} of {filteredItems.length} entries
+        </span>
+        <div className="flex gap-2">
+          {[...Array(totalPages)].map((_, i) => (
+            <button
+              key={i}
+              onClick={() => handlePageChange(i + 1)}
+              className={`btn btn-sm ${currentPage === i + 1 ? 'btn-primary' : 'btn-light'}`}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

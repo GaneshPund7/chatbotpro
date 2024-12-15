@@ -201,7 +201,9 @@ const items = [
 
 const renderItem = (item, index) => {
   return (
+  
     <div
+    
       key={index}
       className="card-group flex items-center flex-wrap sm:flex-nowrap justify-between py-4 gap-2.5"
     >
@@ -218,18 +220,23 @@ const renderItem = (item, index) => {
 const ProfileDefaultContent = () => {
   return (
     <div className="card">
+      <div className="card-header">
+        <h3 className="card-title text-lg font-semibold text-gray-800">Chatbot Builder Detail Questions</h3>
+      </div>
+
+      {/* Content Section */}
       {items.map((item, index) => renderItem(item, index))}
+
+      {/* Save and Continue Button */}
       <div className="flex justify-end mt-4 mb-4">
-      <Link to="/public-profile/my-bot/LLM-model-setup" className="btn btn-primary text-lg font-medium text-white">
-      Save and Continue
+        <Link to="/public-profile/my-bot/LLM-model-setup" className="btn btn-primary text-lg font-medium text-white">
+          Save and Continue
         </Link>
-
-
-        
       </div>
     </div>
   );
 };
+
 
 export { ProfileDefaultContent };
 //

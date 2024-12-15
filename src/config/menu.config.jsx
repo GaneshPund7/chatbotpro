@@ -16,45 +16,68 @@ export const MENU_SIDEBAR = [{
 
 {
   title: 'My Bot',
-  path: '/public-profile/my-bot/myBot'
-},
+  // icon: 'element-11',
+  children: [{
+    title: 'All Bot',
+    path: '/public-profile/my-bot/bot-workflow'
+  }, {
+    title: 'Create New Bot',
+    path: '/public-profile/my-bot/personalize'
+  }]
+  },
+// {
+//   title: 'Bot workflow',
+//   path: '/public-profile/my-bot/bot-workflow'
+// },
+// {
+//   title: 'Personalize',
+//   path: '/public-profile/my-bot/personalize'
+// },
+// {
+//   title: 'Bot functionality 1',
+//   path: '/public-profile/my-bot/bot-functionality-1'
+// },
+// {
+//   title: 'Bot functionality 2',
+//   path: '/public-profile/my-bot/bot-functionality-2'
+// },
+
 {
-  title: 'Bot workflow',
-  path: '/public-profile/my-bot/bot-workflow'
-},
+  title: 'LLMS',
+  // icon: 'element-11',
+  children: [{
+    title: 'Create New',
+    path: '/public-profile/my-bot/LLM-model-setup'
+  }]
+  },
+// {
+//   title: 'LLMs',
+//   path: '/public-profile/my-bot/LLM-model-setup'
+// },
 {
-  title: 'Personalize',
-  path: '/public-profile/my-bot/personalize'
-},
-{
-  title: 'Bot functionality 1',
-  path: '/public-profile/my-bot/bot-functionality-1'
-},
-{
-  title: 'Bot functionality 2',
-  path: '/public-profile/my-bot/bot-functionality-2'
-},
-{
-  title: 'LLMs',
-  path: '/public-profile/my-bot/LLM-model-setup'
-},
-{
-  title: 'Integrate Functionality',
+  title: 'KnowledgeBase',
   path: '/public-profile/my-bot/knowledge-base-setup'
 }, 
 {
-  title: 'Hooks Api',
-  path: '/public-profile/my-bot/hooks'
+  title: 'Agents',
+  path: '/public-profile/my-bot/knowledge-base-setup'
+}, {
+  title: 'Logout',
+  path: '/public-profile/my-bot/knowledge-base-setup'
 }, 
-{
-  title: 'Build Bot',
-  path: '/public-profile/my-bot/bot-build'
-}, 
-{
-  title: 'Channel',
-  path: '/public-profile/my-bot/channel'
-}, 
-  
+// {
+//   title: 'Hooks Api',
+//   path: '/public-profile/my-bot/hooks'
+// }, 
+// {
+//   title: 'Build Bot',
+//   path: '/public-profile/my-bot/bot-build'
+// }, 
+// {
+//   title: 'Channel',
+//   path: '/public-profile/my-bot/channel'
+// }, 
+
   
  
       
