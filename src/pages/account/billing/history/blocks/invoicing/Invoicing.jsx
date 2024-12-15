@@ -11,25 +11,24 @@ const Invoicing = () => {
     return <Input placeholder="Filter..." value={column.getFilterValue() ?? ''} onChange={event => column.setFilterValue(event.target.value)} className="h-9 w-full max-w-40" />;
   };
   const columns = useMemo(() => [{
-    accessorKey: 'id',
-    header: () => <DataGridRowSelectAll />,
-    cell: ({
-      row
-    }) => <DataGridRowSelect row={row} />,
-    enableSorting: false,
-    enableHiding: false,
-    meta: {
-      headerClassName: 'w-0'
-    }
-  }, {
-    accessorFn: row => row.invoice,
-    id: 'invoice',
+    accessorKey: 'Sr. No.',
     header: ({
       column
-    }) => <DataGridColumnHeader title="Member" filter={<ColumnInputFilter column={column} />} column={column} />,
+    }) => <DataGridColumnHeader title="Id" filter={<ColumnInputFilter column={column} />} column={column} />,
     enableSorting: true,
     cell: info => {
-      return info.row.original.invoice;
+      return info.row.original.id;
+    },
+    
+  }, {
+    accessorFn: row => row.name,
+    id: 'name',
+    header: ({
+      column
+    }) => <DataGridColumnHeader title="Name" filter={<ColumnInputFilter column={column} />} column={column} />,
+    enableSorting: true,
+    cell: info => {
+      return info.row.original.name;
     },
     meta: {
       headerClassName: 'min-w-[200px]',
@@ -55,7 +54,7 @@ const Invoicing = () => {
     id: 'date',
     header: ({
       column
-    }) => <DataGridColumnHeader title="Date" column={column} />,
+    }) => <DataGridColumnHeader title="Last Modified" column={column} />,
     enableSorting: true,
     cell: info => {
       return info.row.original.date;
@@ -64,45 +63,21 @@ const Invoicing = () => {
       headerClassName: 'min-w-[170px]',
       cellClassName: 'text-gray-800 font-normal'
     }
-  }, {
-    accessorFn: row => row.dueDate,
-    id: 'dueDate',
+  },  {
+    accessorFn: row => row.action,
+    id: 'action',
     header: ({
       column
-    }) => <DataGridColumnHeader title="Due Date" column={column} />,
+    }) => <DataGridColumnHeader title="Action" column={column} />,
     enableSorting: true,
     cell: info => {
-      return info.row.original.dueDate;
-    },
-    meta: {
-      headerClassName: 'min-w-[170px]',
-      cellClassName: 'text-gray-800 font-normal'
-    }
-  }, {
-    accessorFn: row => row.amount,
-    id: 'amount',
-    header: ({
-      column
-    }) => <DataGridColumnHeader title="Amount" column={column} />,
-    enableSorting: true,
-    cell: info => {
-      return info.row.original.amount;
+      return info.row.original.action;
     },
     meta: {
       headerClassName: 'w-[170px]',
       cellClassName: 'text-gray-800 font-normal'
     }
-  }, {
-    id: 'actions',
-    header: () => '',
-    enableSorting: false,
-    cell: () => {
-      return <button className="btn btn-link">Download</button>;
-    },
-    meta: {
-      headerClassName: 'w-[100px]'
-    }
-  }], []);
+  },], []);
   const data = useMemo(() => InvoicingData, []);
   const handleRowSelection = state => {
     const selectedRowIds = Object.keys(state);
@@ -122,15 +97,15 @@ const Invoicing = () => {
     } = useDataGrid();
     const isFiltered = table.getState().columnFilters.length > 0;
     return <div className="card-header border-b-0 px-5 flex-wrap">
-        <h3 className="card-title">Billing and Invoicing</h3>
+        {/* <h3 className="card-title">My Bot</h3> */}
 
-        <div className="flex flex-wrap items-center gap-2.5">
+        {/* <div className="flex flex-wrap items-center gap-2.5">
           <button className="btn btn-light btn-sm">
             <KeenIcon icon="exit-down" />
             Download PDF
           </button>
           <DataGridColumnVisibility table={table} />
-        </div>
+        </div> */}
       </div>;
   };
   return <DataGrid columns={columns} data={data} rowSelection={true} onRowSelectionChange={handleRowSelection} pagination={{
