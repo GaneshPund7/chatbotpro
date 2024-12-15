@@ -8,7 +8,7 @@ import { RequireAuth } from '@/auth/RequireAuth';
 import { Demo1Layout } from '@/layouts/demo1';
 import { ErrorsRouting } from '@/errors';
 import { AuthenticationWelcomeMessagePage, AuthenticationAccountDeactivatedPage, AuthenticationGetStartedPage } from '@/pages/authentication';
-import { HooksApiPage } from '../pages/public-profile/my-bot/hooks';
+// import { HooksApiPage } from '../pages/public-profile/my-bot/hooks';
 import { ProfileChannelContent, ProfileChannelPage } from '../pages/public-profile/my-bot/channel';
 const AppRoutingSetup = () => {
   return <Routes>
@@ -26,7 +26,7 @@ const AppRoutingSetup = () => {
           <Route path="/public-profile/my-bot/personalize" element={<ProfileFeedsPage />} />
           <Route path="/public-profile/my-bot/channel" element={<ProfileChannelPage/>} />
           <Route path="/public-profile/my-bot/knowledge-base-setup" element={<ProfilePlainPage />} />
-          <Route path="/public-profile/my-bot/hooks" element={<HooksApiPage />} />
+          {/* <Route path="/public-profile/my-bot/hooks" element={<HooksApiPage />} /> */}
           <Route path="/public-profile/my-bot/modal" element={<ProfileModalPage />} />
           <Route path="/public-profile/projects/3-columns" element={<ProjectColumn3Page />} />
           <Route path="/public-profile/projects/2-columns" element={<ProjectColumn2Page />} />

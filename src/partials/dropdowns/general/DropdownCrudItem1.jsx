@@ -2,14 +2,7 @@ import { KeenIcon, MenuIcon, MenuItem, MenuLink, MenuSeparator, MenuSub, MenuTit
 import { Link } from 'react-router-dom';
 const DropdownCrudItem1 = () => {
   return <MenuSub className="menu-default" rootClassName="w-full max-w-[175px]">
-      <MenuItem path="#">
-        <MenuLink>
-          <MenuIcon>
-            <KeenIcon icon="search-list" />
-          </MenuIcon>
-          <MenuTitle>Rename</MenuTitle>
-        </MenuLink>
-      </MenuItem>
+      
       <MenuItem path="#">
         <MenuLink>
           <MenuIcon>

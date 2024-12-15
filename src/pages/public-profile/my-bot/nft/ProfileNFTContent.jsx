@@ -13,6 +13,23 @@ const ProfileNFTContent = () => {
     </h3>
   </div>
   <div className="card-body grid gap-5">
+
+  <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
+      <label className="form-label max-w-56">Provider</label>
+      <div className="grow">
+        <Select defaultValue="1">
+          <SelectTrigger>
+            <SelectValue placeholder="Select" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="1">GPT</SelectItem>
+            <SelectItem value="2">Google Colud AI</SelectItem>
+            <SelectItem value="3">Custom Support Bot</SelectItem> 
+            <SelectItem value="4">Custom Bot</SelectItem> 
+          </SelectContent>
+        </Select>   
+      </div>
+    </div> 
     <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
       <label className="form-label max-w-56">Model Name</label>
       <div className="grow">
