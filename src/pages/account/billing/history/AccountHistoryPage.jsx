@@ -15,11 +15,11 @@ const AccountHistoryPage = () => {
           <Toolbar>
             <ToolbarHeading>
               <ToolbarPageTitle />
-              <ToolbarDescription>Central Hub for Personal Customization</ToolbarDescription>
+              <ToolbarDescription></ToolbarDescription>
             </ToolbarHeading>
             <ToolbarActions>
               <a href="#" className="btn btn-sm btn-light">
-                Billing
+                
               </a>
             </ToolbarActions>
           </Toolbar>
