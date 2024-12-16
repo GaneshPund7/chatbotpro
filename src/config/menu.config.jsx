@@ -1,3 +1,4 @@
+
 export const MENU_SIDEBAR = [{
   title: 'Dashboards',
   icon: 'element-11',
@@ -19,10 +20,10 @@ export const MENU_SIDEBAR = [{
   // icon: 'element-11',
   children: [{
     title: 'All Bot',
-    path: '/public-profile/my-bot/bot-workflow'
+    path: '/public-profile/my-bot/myBot'
   }, {
     title: 'Create New Bot',
-    path: '/public-profile/my-bot/personalize'
+    path: '/public-profile/my-bot/bot-workflow'
   }]
   },
 // {
@@ -46,7 +47,7 @@ export const MENU_SIDEBAR = [{
   title: 'LLMS',
   // icon: 'element-11',
   children: [{
-    title: 'Create New',
+    title: 'Create New LLMs',
     path: '/public-profile/my-bot/LLM-model-setup'
   }]
   },
@@ -61,10 +62,16 @@ export const MENU_SIDEBAR = [{
 {
   title: 'Agents',
   path: '/public-profile/my-bot/knowledge-base-setup'
-}, {
+}, 
+{
   title: 'Logout',
   path: '/public-profile/my-bot/knowledge-base-setup'
 }, 
+<div className="menu-item px-4 py-1.5">
+<a onClick={logout} className="btn btn-sm btn-light justify-center">
+  <FormattedMessage id="USER.MENU.LOGOUT" />
+</a>
+</div>
 // {
 //   title: 'Hooks Api',
 //   path: '/public-profile/my-bot/hooks'
@@ -431,6 +438,7 @@ export const MENU_SIDEBAR = [{
   //   disabled: true
   // }
 ]
+
 export const MENU_MEGA = [
   {
     // title: 'Home',

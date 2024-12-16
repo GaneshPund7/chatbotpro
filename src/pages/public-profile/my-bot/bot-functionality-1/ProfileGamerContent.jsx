@@ -47,7 +47,7 @@ const ProfileGamerContent = () => {
                 />
               </div>
               <div className="flex flex-wrap justify-between gap-5">
-                <div className="flex flex-col gap-5 max-w-96 w-full">
+                <div className="flex flex-col gap-5 max-w-full w-full">
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />

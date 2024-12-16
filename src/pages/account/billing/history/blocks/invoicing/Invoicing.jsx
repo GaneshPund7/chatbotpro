@@ -2,10 +2,17 @@
 import { useMemo } from 'react';
 import { DataGrid, DataGridColumnHeader, DataGridColumnVisibility, DataGridRowSelect, DataGridRowSelectAll, useDataGrid, KeenIcon } from '@/components';
 import { InvoicingData } from './';
+import { useLanguage } from '@/i18n';
+import {Menu, MenuItem, MenuToggle } from '@/components';
+// import { CommonAvatars } from '@/partials/common';
+import {  DropdownCrudItem1 } from '@/partials/dropdowns/general';
 import { toast } from 'sonner';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 const Invoicing = () => {
+  const { isRTL } = useLanguage();
   const ColumnInputFilter = ({
+    
     column
   }) => {
     return <Input placeholder="Filter..." value={column.getFilterValue() ?? ''} onChange={event => column.setFilterValue(event.target.value)} className="h-9 w-full max-w-40" />;
@@ -71,7 +78,30 @@ const Invoicing = () => {
     }) => <DataGridColumnHeader title="Action" column={column} />,
     enableSorting: true,
     cell: info => {
-      return info.row.original.action;
+      // return info.row.original.action;
+      return  <Menu>
+          <MenuItem
+            toggle="dropdown"
+            trigger="click"
+            dropdownProps={{
+              placement: isRTL() ? 'bottom-start' : 'bottom-end',
+              modifiers: [
+                {
+                  name: 'offset',
+                  options: {
+                    offset: isRTL() ? [0, -10] : [0, 10] // [skid, distance]
+                  }
+                }
+              ]
+            }}
+          >
+            <MenuToggle className="btn btn-sm btn-icon btn-light btn-clear">
+               
+              Click
+            </MenuToggle>
+            {DropdownCrudItem1()}
+          </MenuItem>
+        </Menu> 
     },
     meta: {
       headerClassName: 'w-[170px]',
@@ -97,15 +127,11 @@ const Invoicing = () => {
     } = useDataGrid();
     const isFiltered = table.getState().columnFilters.length > 0;
     return <div className="card-header border-b-0 px-5 flex-wrap">
-        {/* <h3 className="card-title">My Bot</h3> */}
-
-        {/* <div className="flex flex-wrap items-center gap-2.5">
-          <button className="btn btn-light btn-sm">
-            <KeenIcon icon="exit-down" />
-            Download PDF
-          </button>
-          <DataGridColumnVisibility table={table} />
-        </div> */}
+       
+           <h3 className="card-title">My Bot</h3>
+                <Link to="/public-profile/my-bot/bot-workflow" className="btn btn-primary btn-sm text-xs font-medium text-white">
+                  Create my bot
+                </Link>
       </div>;
   };
   return <DataGrid columns={columns} data={data} rowSelection={true} onRowSelectionChange={handleRowSelection} pagination={{
