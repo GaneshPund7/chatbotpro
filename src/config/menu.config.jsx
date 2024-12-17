@@ -47,9 +47,14 @@ export const MENU_SIDEBAR = [{
   title: 'LLMS',
   // icon: 'element-11',
   children: [{
+    title: 'All LLMs',
+    path: '/public-profile/my-bot/crm'
+  },
+  {
     title: 'Create New LLMs',
     path: '/public-profile/my-bot/LLM-model-setup'
-  }]
+  }
+]
   },
 // {
 //   title: 'LLMs',
@@ -67,11 +72,7 @@ export const MENU_SIDEBAR = [{
   title: 'Logout',
   path: '/public-profile/my-bot/knowledge-base-setup'
 }, 
-<div className="menu-item px-4 py-1.5">
-<a onClick={logout} className="btn btn-sm btn-light justify-center">
-  <FormattedMessage id="USER.MENU.LOGOUT" />
-</a>
-</div>
+ 
 // {
 //   title: 'Hooks Api',
 //   path: '/public-profile/my-bot/hooks'
