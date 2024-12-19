@@ -1,24 +1,20 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { toAbsoluteUrl } from '@/utils/Assets';
 import { KeenIcon } from '@/components';
 import { Container } from '@/components/container';
 import { UserProfileHero } from '@/partials/heros';
 import { Navbar, NavbarActions, NavbarDropdown } from '@/partials/navbar';
 import { PageMenu } from '@/pages/bot-component';
-import { AccountSettingsModal } from '.';
-const AccountSettingsModalPage = () => {
-  const [settingsModalOpen, setSettingsModalOpen] = useState(true);
-  const handleSettingsModalClose = () => {
-    setSettingsModalOpen(false);
-  };
-  const image = <img src={toAbsoluteUrl('/media/avatars/300-1.png')} className="rounded-full border-3 border-success max-h-[100px] max-w-full" />;
+import { ProfileActivityContent } from '.';
+const ProfileActivityPage = () => {
+  const image = <img src={toAbsoluteUrl('/media/avatars/300-1.png')} className="rounded-full border-3 border-success size-[100px] shrink-0" />;
   return <Fragment>
       <UserProfileHero name="Jenny Klabber" image={image} info={[{
       label: 'KeenThemes',
-      icon: 'abstract-41'
+      icon: 'abstract'
     }, {
-      label: '',
-      icon: ''
+      label: 'SF, Bay Area',
+      icon: 'geolocation'
     }, {
       email: 'jenny@kteam.com',
       icon: 'sms'
@@ -41,8 +37,11 @@ const AccountSettingsModalPage = () => {
       </Container>
 
       <Container>
-        <AccountSettingsModal open={settingsModalOpen} onOpenChange={handleSettingsModalClose} />
+        <div className="flex flex-wrap items-center gap-5 justify-between mb-7.5">
+          <h3 className="text-lg text-gray-900 font-semibold">Activity</h3>
+        </div>
+        <ProfileActivityContent />
       </Container>
     </Fragment>;
 };
-export { AccountSettingsModalPage };
+export { ProfileActivityPage };

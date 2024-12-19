@@ -19,14 +19,12 @@ export const MENU_SIDEBAR = [{
   icon: 'ki-duotone ki-face-id',
   children: [{
     title: 'All Bot',
- 
-    
-    path: '/public-profile/my-bot/bot-workflow'
-    path: '/public-profile/my-bot/myBot'
+    path: '/bot-component/my-bot/bot-workflow'
+    // path: '/bot-component/my-bot/myBot'
 
   }, {
     title: 'Create New Bot',
-    path: '/public-profile/my-bot/bot-workflow'
+    path: '/bot-component/my-bot/personalize'
   }]
   },
 
@@ -37,11 +35,11 @@ export const MENU_SIDEBAR = [{
   icon: 'ki-duotone ki-ensure',
   children: [{
     title: 'All LLMs',
-    path: '/public-profile/my-bot/crm'
+    path: '/bot-component/my-bot/crm'
   },
   {
     title: 'Create New LLMs',
-    path: '/public-profile/my-bot/LLM-model-setup'
+    path: '/bot-component/my-bot/LLM-model-setup'
   }
 ]
   },
@@ -50,33 +48,34 @@ export const MENU_SIDEBAR = [{
   title: 'KnowledgeBase',
   // icon: 'ki-duotone ki-fatrows',
   icon: 'ki-duotone ki-file-added',
-  path: '/public-profile/my-bot/knowledge-base-setup'
+  path: '/bot-component/my-bot/knowledge-base-setup'
 }, 
 {
   title: 'Agents',
   // icon: 'ki-duotone ki-fingerprint-scanning',
   icon: 'ki-duotone ki-focus',
-  path: '/public-profile/my-bot/knowledge-base-setup'
+  path: '/bot-component/my-bot/knowledge-base-setup'
 }, 
 {
   title: 'Logout',
   icon: 'ki-duotone ki-entrance-left',
   path: '/auth/login'
 },
-  path: '/public-profile/my-bot/knowledge-base-setup'
-}, 
+// {
+//   path: '/bot-component/my-bot/knowledge-base-setup'
+// }, 
  
 // {
 //   title: 'Hooks Api',
-//   path: '/public-profile/my-bot/hooks'
+//   path: '/bot-component/my-bot/hooks'
 // }, 
 // {
 //   title: 'Build Bot',
-//   path: '/public-profile/my-bot/bot-build'
+//   path: '/bot-component/my-bot/bot-build'
 // }, 
 // {
 //   title: 'Channel',
-//   path: '/public-profile/my-bot/channel'
+//   path: '/bot-component/my-bot/channel'
 // }, 
  
 
