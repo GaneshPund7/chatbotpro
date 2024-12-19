@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router';
 import { DefaultPage, Demo1DarkSidebarPage } from '@/pages/dashboards';
-import { ProfileActivityPage, ProfileBloggerPage, CampaignsCardPage, CampaignsListPage, ProjectColumn2Page, ProjectColumn3Page, ProfileCompanyPage, ProfileCreatorPage, ProfileCRMPage, ProfileDefaultPage, ProfileEmptyPage, ProfileFeedsPage, ProfileGamerPage, ProfileModalPage, ProfileNetworkPage, ProfileNFTPage, ProfilePlainPage, ProfileTeamsPage, ProfileWorksPage } from '@/pages/public-profile';
+import { ProfileActivityPage, ProfileBloggerPage, CampaignsCardPage, CampaignsListPage, ProjectColumn2Page, ProjectColumn3Page, ProfileCompanyPage, ProfileCreatorPage, ProfileCRMPage, ProfileDefaultPage, ProfileEmptyPage, ProfileFeedsPage, ProfileGamerPage, ProfileModalPage, ProfileNetworkPage, ProfileNFTPage, ProfilePlainPage, ProfileTeamsPage, ProfileWorksPage } from '@/pages/bot-component';
 import { AccountActivityPage, AccountAllowedIPAddressesPage, AccountApiKeysPage, AccountAppearancePage, AccountBackupAndRecoveryPage, AccountBasicPage, AccountCompanyProfilePage, AccountCurrentSessionsPage, AccountDeviceManagementPage, AccountEnterprisePage, AccountGetStartedPage, AccountHistoryPage, AccountImportMembersPage, AccountIntegrationsPage, AccountInviteAFriendPage, AccountMembersStarterPage, AccountNotificationsPage, AccountOverviewPage, AccountPermissionsCheckPage, AccountPermissionsTogglePage, AccountPlansPage, AccountPrivacySettingsPage, AccountRolesPage, AccountSecurityGetStartedPage, AccountSecurityLogPage, AccountSettingsEnterprisePage, AccountSettingsModalPage, AccountSettingsPlainPage, AccountSettingsSidebarPage, AccountTeamInfoPage, AccountTeamMembersPage, AccountTeamsPage, AccountTeamsStarterPage, AccountUserProfilePage } from '@/pages/account';
 import { NetworkAppRosterPage, NetworkMarketAuthorsPage, NetworkAuthorPage, NetworkGetStartedPage, NetworkMiniCardsPage, NetworkNFTPage, NetworkSocialPage, NetworkUserCardsTeamCrewPage, NetworkSaasUsersPage, NetworkStoreClientsPage, NetworkUserTableTeamCrewPage, NetworkVisitorsPage } from '@/pages/network';
 import { AuthPage } from '@/auth';
@@ -9,34 +9,34 @@ import { Demo1Layout } from '@/layouts/demo1';
 import { ErrorsRouting } from '@/errors';
 import { AuthenticationWelcomeMessagePage, AuthenticationAccountDeactivatedPage, AuthenticationGetStartedPage } from '@/pages/authentication';
 // import { HooksApiPage } from '../pages/public-profile/my-bot/hooks';
-import { ProfileChannelContent, ProfileChannelPage } from '../pages/public-profile/my-bot/channel';
+import { ProfileChannelContent, ProfileChannelPage } from '../pages/bot-component/my-bot/channel';
 const AppRoutingSetup = () => {
   return <Routes>
       <Route element={<RequireAuth />}>
         <Route element={<Demo1Layout />}>
           <Route path="/" element={<DefaultPage />} />
           <Route path="/dark-sidebar" element={<Demo1DarkSidebarPage />} />
-          <Route path="/public-profile/my-bot/bot-functionality-2" element={<ProfileDefaultPage />} />
-          <Route path="/public-profile/my-bot/myBot" element={<ProfileCreatorPage />} />
-          <Route path="/public-profile/my-bot/bot-build" element={<ProfileCompanyPage />} />
-          <Route path="/public-profile/my-bot/LLM-model-setup" element={<ProfileNFTPage />} />
-          <Route path="/public-profile/my-bot/bot-workflow" element={<ProfileBloggerPage />} />
-          <Route path="/public-profile/my-bot/crm" element={<ProfileCRMPage />} />
-          <Route path="/public-profile/my-bot/bot-functionality-1" element={<ProfileGamerPage />} />
-          <Route path="/public-profile/my-bot/personalize" element={<ProfileFeedsPage />} />
-          <Route path="/public-profile/my-bot/channel" element={<ProfileChannelPage/>} />
-          <Route path="/public-profile/my-bot/knowledge-base-setup" element={<ProfilePlainPage />} />
-          {/* <Route path="/public-profile/my-bot/hooks" element={<HooksApiPage />} /> */}
-          <Route path="/public-profile/my-bot/modal" element={<ProfileModalPage />} />
-          <Route path="/public-profile/projects/3-columns" element={<ProjectColumn3Page />} />
-          <Route path="/public-profile/projects/2-columns" element={<ProjectColumn2Page />} />
-          <Route path="/public-profile/works" element={<ProfileWorksPage />} />
-          <Route path="/public-profile/teams" element={<ProfileTeamsPage />} />
-          <Route path="/public-profile/network" element={<ProfileNetworkPage />} />
-          <Route path="/public-profile/activity" element={<ProfileActivityPage />} />
-          <Route path="/public-profile/campaigns/card" element={<CampaignsCardPage />} />
-          <Route path="/public-profile/campaigns/list" element={<CampaignsListPage />} />
-          <Route path="/public-profile/empty" element={<ProfileEmptyPage />} />
+          <Route path="/bot-component/my-bot/bot-functionality-2" element={<ProfileDefaultPage />} />
+          <Route path="/bot-component/my-bot/myBot" element={<ProfileCreatorPage />} />
+          <Route path="/bot-component/my-bot/bot-build" element={<ProfileCompanyPage />} />
+          <Route path="/bot-component/my-bot/LLM-model-setup" element={<ProfileNFTPage />} />
+          <Route path="/bot-component/my-bot/bot-workflow" element={<ProfileBloggerPage />} />
+          <Route path="/bot-component/my-bot/crm" element={<ProfileCRMPage />} />
+          <Route path="/bot-component/my-bot/bot-functionality-1" element={<ProfileGamerPage />} />
+          <Route path="/bot-component/my-bot/personalize" element={<ProfileFeedsPage />} />
+          <Route path="/bot-component/my-bot/channel" element={<ProfileChannelPage/>} />
+          <Route path="/bot-component/my-bot/knowledge-base-setup" element={<ProfilePlainPage />} />
+          {/* <Route path="/bot-component/my-bot/hooks" element={<HooksApiPage />} /> */}
+          <Route path="/bot-component/my-bot/modal" element={<ProfileModalPage />} />
+          <Route path="/bot-component/projects/3-columns" element={<ProjectColumn3Page />} />
+          <Route path="/bot-component/projects/2-columns" element={<ProjectColumn2Page />} />
+          <Route path="/bot-component/works" element={<ProfileWorksPage />} />
+          <Route path="/bot-component/teams" element={<ProfileTeamsPage />} />
+          <Route path="/bot-component/network" element={<ProfileNetworkPage />} />
+          <Route path="/bot-component/activity" element={<ProfileActivityPage />} />
+          <Route path="/bot-component/campaigns/card" element={<CampaignsCardPage />} />
+          <Route path="/bot-component/campaigns/list" element={<CampaignsListPage />} />
+          <Route path="/bot-component/empty" element={<ProfileEmptyPage />} />
           <Route path="/account/home/get-started" element={<AccountGetStartedPage />} />
           <Route path="/account/home/user-profile" element={<AccountUserProfilePage />} />
           <Route path="/account/home/company-profile" element={<AccountCompanyProfilePage />} />

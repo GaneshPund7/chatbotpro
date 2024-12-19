@@ -3,7 +3,7 @@ import { KeenIcon } from '@/components';
 import { toAbsoluteUrl } from '@/utils';
 import { NavbarDropdown } from '@/partials/navbar';
 import { Dialog, DialogBody, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { About, CommunityBadges, Connections, Contributions, Projects, WorkExperience } from '@/pages/public-profile/my-bot/default';
+import { About, CommunityBadges, Connections, Contributions, Projects, WorkExperience } from '@/pages/bot-component/my-bot/bot-functionality-2';
 const ModalProfile = ({
   open,
   onOpenChange

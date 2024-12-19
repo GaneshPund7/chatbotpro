@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { toAbsoluteUrl } from '@/utils';
 import { MiscEngage } from '@/partials/misc';
-import { ProfileActivityContent } from '@/pages/public-profile/activity';
+import { ProfileActivityContent } from '@/pages/bot-component/activity';
 const AccountActivityContent = () => {
   return <div className="grid gap-5 lg:gap-7.5">
       <ProfileActivityContent />
