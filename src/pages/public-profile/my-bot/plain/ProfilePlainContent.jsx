@@ -16,6 +16,7 @@ const ProfilePlainContent = () => {
     const [isModalOpen, setIsModalOpen] = useState(false); 
     const [isAddFileModalOpen, setIsAddFileModalOpen] = useState(false);
 
+    const [isMOpen, setIsMOpen] = useState(false); 
     const handleSaveClick = () => {
       setIsModalOpen(true);  
   };
@@ -25,6 +26,7 @@ const ProfilePlainContent = () => {
   };
 
 
+
   const handleAddFileClick = () => {
     setIsAddFileModalOpen(true);
   };
@@ -32,6 +34,15 @@ const ProfilePlainContent = () => {
   const handleAddFileModalClose = () => {
     setIsAddFileModalOpen(false);
   };
+     const handleMSaveClick = () => {
+        setIsMOpen(true);  
+    };
+
+    const handleMClose = () => {
+        setIsMOpen(false);  
+    };
+
+
     
   return <div className="card pb-2.5">
   <div className="card-header" id="webhooks">
@@ -91,23 +102,43 @@ const ProfilePlainContent = () => {
         <label className="checkbox-group mb-6 mt-5">
           <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
           <span className="checkbox-label">Recursive</span>
-        </label>
-  
-      </div>
-
-      
+        </label> 
+      </div>     
     </div>
 
     <div className="flex justify-end">
       {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
-      <Link to="/public-profile/my-bot/hooks" className="btn btn-primary text-lg font-medium text-white">
+      <button onClick={handleMSaveClick} className="btn btn-primary text-lg font-medium text-white">
       Save and Continue
-        </Link>
-
-        
+        </button>      
     </div>
   </div>
 
+  
+    {/* are you sure asking modal */}
+  <Modal open={isMOpen} onClose={handleMClose} className="modal-class">
+    <div
+        className="modal-content p-5 bg-white rounded-md shadow-lg"
+        style={{ maxWidth: '400px', margin: '0 auto' }} 
+    >
+        <h3 className="text-lg font-semibold mb-4">Are you sure?</h3>
+        <p className="text-sm mb-6">Do you want step-by-step guidance to build the bot using flow builder or directly get a ready-made bot?</p>
+        <div className="flex justify-end gap-4">
+            <button
+                className="btn btn-secondary"
+                onClick={handleMClose}>
+                No
+            </button>
+           <div className="flex justify-end mb-4">
+      <Link to="/public-profile/my-bot/bot-build" className="btn btn-primary text-lg font-medium text-white">
+    yes
+        </Link>        
+      </div>           
+        </div>
+    </div>
+</Modal>
+
+  {/* Setting model */}
   <Modal open={isModalOpen} onClose={handleModalClose} className="modal-class">
     <div
         className="modal-content p-5 bg-white rounded-md shadow-lg"
@@ -196,6 +227,8 @@ const ProfilePlainContent = () => {
             </div>
         </div>
 
+
+
         <div className="flex justify-end gap-4 mt-5">
             <button
                 className="btn btn-secondary"
@@ -204,7 +237,7 @@ const ProfilePlainContent = () => {
                 Close
             </button>
             <div className="flex justify-end  mb-4">
-      <Link to="/public-profile/my-bot/hooks" className="btn btn-primary text-lg font-medium text-white">
+      <Link to="/public-profile/my-bot/bot-build" className="btn btn-primary text-lg font-medium text-white">
      Save
         </Link>
 

@@ -25,6 +25,8 @@ const CardWork = ({
             <Link to="/public-profile/my-bot/LLM-model-setup" className="text-2sm text-gray-800 hover:text-primary mb-px">
               {authorName}
             </Link>
+            <p>{description}</p>
+
           </div>
 
           {/* <div className="flex gap-3 items-center">

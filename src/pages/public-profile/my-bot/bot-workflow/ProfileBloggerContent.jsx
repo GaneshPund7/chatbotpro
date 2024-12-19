@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CardWork } from '@/partials/cards'; 
+import { Link } from 'react-router-dom';
 
 const ProfileBloggerContent = () => {
   const [activeView, setActiveView] = useState('cards');
@@ -55,9 +56,14 @@ const ProfileBloggerContent = () => {
 
   return (
     <div className="flex flex-col items-stretch gap-5 lg:gap-7.5">
-      <h1 className="text-2xl font-bold text-gray-800">
+   <div className='flex justify-between'>  
+     <h1 className="text-2xl font-bold text-gray-800">
         Choose a pre-made template or create a custom bot
       </h1>
+         <Link to="/public-profile/my-bot/personalize" className="btn btn-primary btn-sm text-xs font-medium text-white">
+           Create Custom bot
+         </Link></div>
+            
 
       <div className="flex flex-wrap items-center gap-5 justify-between">
         <h3 className="text-lg text-gray-900 font-semibold">

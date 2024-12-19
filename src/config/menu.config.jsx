@@ -1,3 +1,4 @@
+
 export const MENU_SIDEBAR = [{
   title: 'Dashboards',
   icon: 'element-11',
@@ -18,11 +19,14 @@ export const MENU_SIDEBAR = [{
   icon: 'ki-duotone ki-face-id',
   children: [{
     title: 'All Bot',
+ 
     
     path: '/public-profile/my-bot/bot-workflow'
+    path: '/public-profile/my-bot/myBot'
+
   }, {
     title: 'Create New Bot',
-    path: '/public-profile/my-bot/personalize'
+    path: '/public-profile/my-bot/bot-workflow'
   }]
   },
 
@@ -32,9 +36,14 @@ export const MENU_SIDEBAR = [{
   // icon: 'element-11',
   icon: 'ki-duotone ki-ensure',
   children: [{
-    title: 'Create New',
+    title: 'All LLMs',
+    path: '/public-profile/my-bot/crm'
+  },
+  {
+    title: 'Create New LLMs',
     path: '/public-profile/my-bot/LLM-model-setup'
-  }]
+  }
+]
   },
 
 {
@@ -48,15 +57,33 @@ export const MENU_SIDEBAR = [{
   // icon: 'ki-duotone ki-fingerprint-scanning',
   icon: 'ki-duotone ki-focus',
   path: '/public-profile/my-bot/knowledge-base-setup'
-}, {
+}, 
+{
   title: 'Logout',
   icon: 'ki-duotone ki-entrance-left',
   path: '/auth/login'
 },
+  path: '/public-profile/my-bot/knowledge-base-setup'
+}, 
+ 
+// {
+//   title: 'Hooks Api',
+//   path: '/public-profile/my-bot/hooks'
+// }, 
+// {
+//   title: 'Build Bot',
+//   path: '/public-profile/my-bot/bot-build'
+// }, 
+// {
+//   title: 'Channel',
+//   path: '/public-profile/my-bot/channel'
+// }, 
+ 
 
   
 
 ]
+
 export const MENU_MEGA = [
   {
     // title: 'Home',
