@@ -50,12 +50,18 @@ export const MENU_SIDEBAR = [{
   icon: 'ki-duotone ki-file-added',
   path: '/bot-component/my-bot/knowledge-base-setup'
 }, 
+// {
+//   title: 'Agents',
+//   // icon: 'ki-duotone ki-fingerprint-scanning',
+//   icon: 'ki-duotone ki-focus',
+//   path: '/bot-component/my-bot/knowledge-base-setup'
+// }, 
+
 {
-  title: 'Agents',
-  // icon: 'ki-duotone ki-fingerprint-scanning',
-  icon: 'ki-duotone ki-focus',
-  path: '/bot-component/my-bot/knowledge-base-setup'
-}, 
+  title : 'Leads',
+  path: '/bot-component/my-bot/leads'
+  
+},
 {
   title: 'Logout',
   icon: 'ki-duotone ki-entrance-left',
