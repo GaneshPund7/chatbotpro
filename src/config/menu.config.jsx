@@ -59,6 +59,7 @@ export const MENU_SIDEBAR = [{
 
 {
   title : 'Leads',
+  icon: 'ki-duotone ki-fatrows',
   path: '/bot-component/my-bot/leads'
   
 },
