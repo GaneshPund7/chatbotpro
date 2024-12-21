@@ -9,8 +9,6 @@ const Layout = () => {
   useBodyClasses('dark:bg-coal-500');
   return (
     <Fragment>
-     
-
       <div className="h-screen w-screen flex justify-center items-center bg-gray-100 dark:bg-coal-500 branded-bg">
         <div className="w-full h-full flex justify-center items-center p-8 lg:p-10">
           <Outlet />
