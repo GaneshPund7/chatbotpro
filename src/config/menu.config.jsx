@@ -67,11 +67,24 @@ export const MENU_SIDEBAR = [{
 //   path: '/bot-component/my-bot/knowledge-base-setup'
 // }, 
 {
-  title: 'Agents',
-  // icon: 'ki-duotone ki-fingerprint-scanning',
-  icon: 'ki-duotone ki-focus',
+  title: 'KnowledgeBase',
+  // icon: 'ki-duotone ki-fatrows',
+  icon: 'ki-duotone ki-file-added',
   path: '/bot-component/my-bot/knowledge-base-setup'
 }, 
+// {
+//   title: 'Agents',
+//   // icon: 'ki-duotone ki-fingerprint-scanning',
+//   icon: 'ki-duotone ki-focus',
+//   path: '/bot-component/my-bot/knowledge-base-setup'
+// }, 
+
+{
+  title : 'Leads',
+  icon: 'ki-duotone ki-fatrows',
+  path: '/bot-component/my-bot/leads'
+  
+},
 {
   title: 'Logout',
   icon: 'ki-duotone ki-entrance-left',
