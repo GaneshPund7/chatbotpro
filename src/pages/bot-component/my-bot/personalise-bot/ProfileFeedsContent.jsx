@@ -8,9 +8,7 @@ const ProfileFeedsContent = () => {
     const [webhooknameInput, setWebhookNameInput] = useState('CostaRicaHook');
     
   return <div className="card pb-2.5">
-  <div className="card-header" id="webhooks">
-    <h3 className="card-title"> Personalize Your Bot</h3>
-  </div>
+ 
   <div className="card-body grid gap-5">
 
     <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
@@ -74,14 +72,20 @@ const ProfileFeedsContent = () => {
     <div className="flex items-center flex-wrap lg:flex-nowrap gap-2.5">
       <label className="form-label max-w-56">Purpose</label>
       <div className="grow">
-        <input className="input" type="text" placeholder='Create Chatbot for Travel Assistance' value={webhooknameInput} onChange={e => setWebhookNameInput(e.target.value)} /> 
-      </div>
+  <textarea 
+    className="input" 
+    placeholder="Add porpose for creating bot" 
+   
+    
+    rows="4" 
+  />
+</div>
     </div> 
 
     <div className="flex justify-end">
       {/* <button className="btn btn-primary btn-sm">Save and Continue</button> */}
-      <Link to="/public-profile/my-bot/bot-functionality-1" className="btn btn-primary text-lg font-medium text-white">
-      Save and Continue
+      <Link to="/bot-component/my-bot/bot-functionality-1" className="btn btn-primary text-lg font-medium text-white">
+      Next
         </Link>
 
         

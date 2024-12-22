@@ -126,12 +126,9 @@ const Invoicing = () => {
       table
     } = useDataGrid();
     const isFiltered = table.getState().columnFilters.length > 0;
-    return <div className="card-header border-b-0 px-5 flex-wrap">
+    return <div className="">
        
-           <h3 className="card-title">My Bot</h3>
-                <Link to="/public-profile/my-bot/bot-workflow" className="btn btn-primary btn-sm text-xs font-medium text-white">
-                  Create my bot
-                </Link>
+           
       </div>;
   };
   return <DataGrid columns={columns} data={data} rowSelection={true} onRowSelectionChange={handleRowSelection} pagination={{

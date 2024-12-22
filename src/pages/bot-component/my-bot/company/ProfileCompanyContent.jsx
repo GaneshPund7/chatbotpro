@@ -253,7 +253,7 @@ const ProfileCompanyContent = () => {
         </Link> 
       </div>
       <div className="mt-4 ms-2">
-      <Link to="/public-profile/my-bot/channel" className="btn btn-primary btn-sm text-lg font-medium text-white">
+      <Link to="/bot-component/my-bot/channel" className="btn btn-primary btn-sm text-lg font-medium text-white">
       Deploy
         </Link> 
       </div>

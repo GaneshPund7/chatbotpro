@@ -27,7 +27,7 @@ const AppRoutingSetup = () => {
           <Route path="/bot-component/my-bot/channel" element={<ProfileChannelPage/>} />
           <Route path="/bot-component/my-bot/knowledge-base-setup" element={<ProfilePlainPage />} />
           {/* <Route path="/bot-component/my-bot/hooks" element={<HooksApiPage />} /> */}
-          <Route path="/bot-component/my-bot/modal" element={<ProfileModalPage />} />
+          <Route path="/bot-component/my-bot/knowledgebaseCreate" element={<ProfileModalPage />} />
           <Route path="/bot-component/projects/3-columns" element={<ProjectColumn3Page />} />
           <Route path="/bot-component/projects/2-columns" element={<ProjectColumn2Page />} />
           <Route path="/bot-component/works" element={<ProfileWorksPage />} />

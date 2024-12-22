@@ -57,9 +57,9 @@ const ProfileBloggerContent = () => {
   return (
     <div className="flex flex-col items-stretch gap-5 lg:gap-7.5">
    <div className='flex justify-between'>  
-     <h1 className="text-2xl font-bold text-gray-800">
-        Choose a pre-made template or create a custom bot
-      </h1>
+     <h6 className="text-xl font-bold text-gray-800">
+     Choose a Starting Point Form
+      </h6>
          <Link to="/bot-component/my-bot/personalize" className="btn btn-primary btn-sm text-xs font-medium text-white">
            Create Custom bot
          </Link></div>

@@ -27,7 +27,7 @@ const DropdownCrudItem1 = () => {
             <KeenIcon icon="copy" />
           </MenuIcon>
           <MenuTitle> 
-          <Link to="/public-profile/my-bot/bot-workflow" className="btn btn-link">
+          <Link to="/bot-component/my-bot/bot-workflow" className="btn btn-link">
           Create New
         </Link>
           </MenuTitle>

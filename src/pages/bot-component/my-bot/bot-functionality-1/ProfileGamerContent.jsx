@@ -30,14 +30,10 @@ const ProfileGamerContent = () => {
       </style>
 
       <div className="card min-w-full">
-        <div className="card-header gap-2">
-          <h3 className="card-title">Setup Details</h3>
-        </div>
-        <div className="card-body lg:py-7.5 py-5">
+        <div className="card-body">
           <div className="flex flex-col gap-5">
             {/* Knowledge Base Setup */}
             <div className="flex flex-col gap-2">
-              <h4 className="font-bold">Select Functionality</h4>
               <div className="form-group">
                 <input
                   type="text"
@@ -49,7 +45,7 @@ const ProfileGamerContent = () => {
               <div className="flex flex-wrap justify-between gap-5">
                 <div className="flex flex-col gap-5 max-w-full w-full">
                   <div className="flex flex-col gap-2.5">
-                    <label className="checkbox-group">
+                    <label className="checkbox-group ">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Answer Frequently Asked Questions (FAQs)</span>
                     </label>
@@ -110,8 +106,34 @@ const ProfileGamerContent = () => {
                   </div>
 
                   <div className="flex items-center gap-3.5">
-                  <label className="form-label w-auto">Other custom functionality</label>
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="TravelBuddy" />
+                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                  <label className="form-label w-auto">Other functionality 01</label>
+
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 01" />
+                </div>
+                <div className="flex items-center gap-3.5">
+                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                  <label className="form-label w-auto">Other functionality 02</label>
+
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 02" />
+                </div>
+                <div className="flex items-center gap-3.5">
+                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                  <label className="form-label w-auto">Other functionality 03</label>
+
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 03" />
+                </div>
+                <div className="flex items-center gap-3.5">
+                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                  <label className="form-label w-auto">Other functionality 04</label>
+
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 04" />
+                </div>
+                <div className="flex items-center gap-3.5">
+                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                  <label className="form-label w-auto">Other functionality 05</label>
+
+                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 05" />
                 </div>
 
 
@@ -124,8 +146,8 @@ const ProfileGamerContent = () => {
             {/* Save Button */}
             <div className="flex justify-end">
                       <div className="flex justify-end">
-              <Link to="/public-profile/my-bot/bot-functionality-2" className="btn btn-primary text-lg font-medium text-white ">
-              Save Settings
+              <Link to="/bot-component/my-bot/bot-functionality-2" className="btn btn-primary text-lg font-medium text-white ">
+           Next
         </Link>
             </div>
             </div>

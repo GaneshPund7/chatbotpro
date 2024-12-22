@@ -6,10 +6,29 @@ import { UserProfileHero } from '@/partials/heros';
 import { Navbar, NavbarActions, NavbarDropdown } from '@/partials/navbar';
 import { PageMenu } from '@/pages/bot-component';
 import { ProfileGamerContent } from './ProfileGamerContent';
+import { Toolbar, ToolbarActions, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
+import { useLayout } from '@/providers';
+import { Link } from 'react-router-dom';
 const ProfileGamerPage = () => {
-  const image = <img src={toAbsoluteUrl('/media/avatars/300-27.png')} className="rounded-full border-3 border-success size-[100px] shrink-0" />;
+  const {
+    currentLayout
+  } = useLayout();
   return <Fragment>
-
+  {currentLayout?.name === 'demo1-layout' && <Container>
+          <Toolbar>
+            <ToolbarHeading>
+              <ToolbarPageTitle />
+              <h2><b>Core Functionality</b></h2>
+              <ToolbarDescription>Overview of all bots</ToolbarDescription>
+            </ToolbarHeading>
+            <ToolbarActions>
+           
+            <Link to="/bot-component/my-bot/bot-workflow" className="btn btn-primary btn-sm text-xs font-medium text-white">
+                  Create my bot
+                </Link>
+            </ToolbarActions>
+          </Toolbar>
+        </Container>}
       <Container>
         <ProfileGamerContent />
       </Container>
