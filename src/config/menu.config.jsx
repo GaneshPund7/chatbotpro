@@ -66,12 +66,12 @@ export const MENU_SIDEBAR = [{
 //   icon: 'ki-duotone ki-file-added',
 //   path: '/bot-component/my-bot/knowledge-base-setup'
 // }, 
-{
-  title: 'KnowledgeBase',
-  // icon: 'ki-duotone ki-fatrows',
-  icon: 'ki-duotone ki-file-added',
-  path: '/bot-component/my-bot/knowledge-base-setup'
-}, 
+// {
+//   title: 'KnowledgeBase',
+//   // icon: 'ki-duotone ki-fatrows',
+//   icon: 'ki-duotone ki-file-added',
+//   path: '/bot-component/my-bot/knowledge-base-setup'
+// }, 
 // {
 //   title: 'Agents',
 //   // icon: 'ki-duotone ki-fingerprint-scanning',

@@ -23,9 +23,9 @@ const ProfileFeedsPage = () => {
             </ToolbarHeading>
             <ToolbarActions>
            
-            <Link to="/bot-component/my-bot/bot-functionality-1" className="btn btn-primary btn-sm text-xs font-medium text-white">
+            {/* <Link to="/bot-component/my-bot/bot-functionality-1" className="btn btn-primary btn-sm text-xs font-medium text-white">
                   Create my bot
-                </Link>
+                </Link> */}
             </ToolbarActions>
           </Toolbar>
         </Container>}

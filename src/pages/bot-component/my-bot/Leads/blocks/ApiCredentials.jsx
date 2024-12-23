@@ -149,10 +149,20 @@ const Invoicing = () => {
   const Toolbar = () => {
     return (
       <div className="card-header border-b-0 px-5 flex flex-col gap-4">
+       
+
         <div className="flex justify-between items-center w-full">
-          <h3 className="card-title text-lg font-bold">Leads</h3>
-          <div className="flex gap-2">
-            <Input
+          <Input
+            type="text"
+            placeholder="Search by name or email"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="h-9 w-[300px]"
+          />
+            {/* <label className=''>Form</label> */}
+            {/* form to date serch */}
+         {/* <div className='d-flex justify-content-end'>
+         <Input
               type="date"
               placeholder="From Date"
               value={fromDate}
@@ -166,23 +176,14 @@ const Invoicing = () => {
               onChange={(e) => setToDate(e.target.value)}
               className="h-9 w-[140px]"
             />
-          </div>
-        </div>
-
-        <div className="flex justify-between items-center w-full">
-          <Input
-            type="text"
-            placeholder="Search by name or email"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="h-9 w-[300px]"
-          />
-          <Link
+         </div> */}
+          
+          {/* <Link
             to="/bot-component/my-bot/LLM-model-setup"
             className="btn btn-primary btn-sm text-xs font-medium text-white px-6"
           >
             New Leads
-          </Link>
+          </Link> */}
         </div>
       </div>
     );

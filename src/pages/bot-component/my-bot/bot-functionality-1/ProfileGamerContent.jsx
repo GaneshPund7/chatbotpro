@@ -28,7 +28,6 @@ const ProfileGamerContent = () => {
           }
         `}
       </style>
-
       <div className="card min-w-full">
         <div className="card-body">
           <div className="flex flex-col gap-5">
@@ -50,106 +49,108 @@ const ProfileGamerContent = () => {
                       <span className="checkbox-label">Answer Frequently Asked Questions (FAQs)</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Help with product/service bookings</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Provide personalized recommendation</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Track orders or bookings</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
+                  <hr />
                   <div className="flex flex-col gap-2.5">
                     <label className="checkbox-group">
                       <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
                       <span className="checkbox-label">Send notifications or reminders</span>
                     </label>
                   </div>
-                  <div className="flex flex-col gap-2.5">
-                    <label className="checkbox-group">
-                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                      <span className="checkbox-label">Send notifications or reminders</span>
-                    </label>
-                  </div>
-
+                  <hr />
                   <div className="flex items-center gap-3.5">
-                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                  <label className="form-label w-auto">Other functionality 01</label>
+                    <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                    <label className="form-label w-auto">Other functionality 01</label>
 
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 01" />
-                </div>
-                <div className="flex items-center gap-3.5">
-                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                  <label className="form-label w-auto">Other functionality 02</label>
+                    <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functionality 01" />
+                  </div>
+                  <hr />
+                    <div className="flex items-center gap-3.5">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <label className="form-label w-auto">Other functionality 02</label>
 
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 02" />
-                </div>
-                <div className="flex items-center gap-3.5">
-                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                  <label className="form-label w-auto">Other functionality 03</label>
+                      <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functionality 02" />
+                    </div>
+                    <hr />
+                    <div className="flex items-center gap-3.5">
+                      <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                      <label className="form-label w-auto">Other functionality 03</label>
 
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 03" />
-                </div>
-                <div className="flex items-center gap-3.5">
-                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                  <label className="form-label w-auto">Other functionality 04</label>
+                      <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functionality 03" />
+                    </div>
+                    <hr />
+                  <div className="flex items-center gap-3.5">
+                    <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                    <label className="form-label w-auto">Other functionality 04</label>
 
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 04" />
-                </div>
-                <div className="flex items-center gap-3.5">
-                  <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
-                  <label className="form-label w-auto">Other functionality 05</label>
+                    <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functionality 04" />
+                  </div>
+                  <hr />
+                  <div className="flex items-center gap-3.5">
+                    <input type="checkbox" className="checkbox checkbox-sm" value="1" readOnly />
+                    <label className="form-label w-auto">Other functionality 05</label>
 
-                  <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functinality 05" />
-                </div>
-
-
-                  
+                    <input type="text" className="input flex-1 w-full max-w-md" placeholder="Other functionality 05" />
+                  </div>
+                  <hr />
                 </div>
               </div>
             </div>
- 
-
             {/* Save Button */}
             <div className="flex justify-end">
-                      <div className="flex justify-end">
-              <Link to="/bot-component/my-bot/bot-functionality-2" className="btn btn-primary text-lg font-medium text-white ">
-           Next
-        </Link>
-            </div>
+              <div className="flex justify-end">
+                <Link to="/bot-component/my-bot/bot-functionality-2" className="btn btn-primary text-lg font-medium text-white ">
+                  Next
+                </Link>
+              </div>
             </div>
           </div>
         </div>

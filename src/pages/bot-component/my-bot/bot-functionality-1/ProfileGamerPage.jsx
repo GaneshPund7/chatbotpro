@@ -19,13 +19,13 @@ const ProfileGamerPage = () => {
             <ToolbarHeading>
               <ToolbarPageTitle />
               <h2><b>Core Functionality</b></h2>
-              <ToolbarDescription>Overview of all bots</ToolbarDescription>
+              <ToolbarDescription>Overview of core functionality</ToolbarDescription>
             </ToolbarHeading>
             <ToolbarActions>
            
-            <Link to="/bot-component/my-bot/bot-workflow" className="btn btn-primary btn-sm text-xs font-medium text-white">
+            {/* <Link to="/bot-component/my-bot/bot-workflow" className="btn btn-primary btn-sm text-xs font-medium text-white">
                   Create my bot
-                </Link>
+                </Link> */}
             </ToolbarActions>
           </Toolbar>
         </Container>}

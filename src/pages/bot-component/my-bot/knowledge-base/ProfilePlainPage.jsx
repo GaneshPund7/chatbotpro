@@ -23,7 +23,7 @@ const ProfilePlainPage = () => {
             <ToolbarActions>
            
             <Link to="/bot-component/my-bot/knowledgebaseCreate" className="btn btn-primary btn-sm text-xs font-medium text-white">
-                  Create my bot
+                  Create new Knowledge 
                 </Link>
             </ToolbarActions>
           </Toolbar>
