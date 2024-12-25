@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { toAbsoluteUrl } from '@/utils';
 import { MiscHighlightedPosts } from '@/partials/misc';
-import { FeaturesHighlight } from '@/pages/bot-component/my-bot/creator';
+import { FeaturesHighlight } from '@/pages/Admin/creator';
 import { Authentification, GeneralSettings, LoginSessions, ProductInsight, QuickSettings, TrustedDevices } from './blocks';
 const AccountOverviewContent = () => {
   const posts = [{

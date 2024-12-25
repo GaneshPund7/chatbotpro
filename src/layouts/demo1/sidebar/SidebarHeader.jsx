@@ -9,7 +9,13 @@ const SidebarHeader = forwardRef((props, ref) => {
   } = useDemo1Layout();
   const lightLogo = () => <Fragment>
       <Link to="/" className="dark:hidden">
-        <img src={toAbsoluteUrl('/media/app/default-logo.svg')} className="default-logo min-h-[22px] max-w-none" />
+      <p className="text-4xl font-extrabold text-gray-800 tracking-wide text-center drop-shadow-md">
+        <span className="text-blue-600">Auto</span>
+        <span className="text-gray-800">Bot</span>
+      </p>
+
+
+        {/* <img src={toAbsoluteUrl('/media/app/default-logo.svg')} className="default-logo min-h-[22px] max-w-none" /> */}
         <img src={toAbsoluteUrl('/media/app/mini-logo.svg')} className="small-logo min-h-[22px] max-w-none" />
       </Link>
       <Link to="/" className="hidden dark:block">

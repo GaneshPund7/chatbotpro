@@ -35,6 +35,8 @@ const Signup = () => {
   const formik = useFormik({
     initialValues,
     validationSchema: signupSchema,
+
+    
     onSubmit: async (values, {
       setStatus,
       setSubmitting
@@ -56,6 +58,9 @@ const Signup = () => {
       }
     }
   });
+
+
+
   const togglePassword = event => {
     event.preventDefault();
     setShowPassword(!showPassword);
