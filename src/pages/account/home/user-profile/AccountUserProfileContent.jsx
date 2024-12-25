@@ -1,4 +1,4 @@
-import { RecentUploads } from '@/pages/bot-component/my-bot/bot-functionality-2';
+import { RecentUploads } from '@/pages/Admin/bot-functionality-2';
 import { BasicSettings, CalendarAccounts, CommunityBadges, Connections, PersonalInfo, StartNow, Work } from './blocks';
 const AccountUserProfileContent = () => {
   return <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-7.5">

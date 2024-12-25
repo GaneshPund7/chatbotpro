@@ -1,4 +1,3 @@
-
 export const MENU_SIDEBAR = [{
   title: 'Dashboards',
   icon: 'element-11',
@@ -11,38 +10,36 @@ export const MENU_SIDEBAR = [{
   }]
 },
 
-
-
 {
   title: 'My Bot',
   // icon: 'element-11',
   icon: 'ki-duotone ki-face-id',
   children: [{
     title: 'All Bot',
-    path: '/bot-component/my-bot/myBot'
-    // path: '/bot-component/my-bot/myBot'
+    path: '/Admin/myBot'
+    // path: '/Admin/myBot'
 
   }, {
     title: 'Create New Bot',
-    path: '/bot-component/my-bot/personalize'
+    path: 'Admin/personalize'
   }]
   },
 
 
-{
-  title: 'LLMS',
-  // icon: 'element-11',
-  icon: 'ki-duotone ki-ensure',
-  children: [{
-    title: 'All LLMs',
-    path: '/bot-component/my-bot/crm'
-  },
-  {
-    title: 'Create New LLMs',
-    path: '/bot-component/my-bot/LLM-model-setup'
-  }
-]
-  },
+// {
+//   title: 'LLMS',
+//   // icon: 'element-11',
+//   icon: 'ki-duotone ki-ensure',
+//   children: [{
+//     title: 'All LLMs',
+//     path: 'Admin/crm'
+//   },
+//   {
+//     title: 'Create New LLMs',
+//     path: 'Admin/LLM-model-setup'
+//   }
+// ]
+//   },
 
   {
     title: 'KnowledgeBase',
@@ -50,11 +47,11 @@ export const MENU_SIDEBAR = [{
     icon: 'ki-duotone ki-file-added',
     children: [{
       title: 'All Knowledge Base',
-      path: '/bot-component/my-bot/knowledge-base-setup'
+      path: 'Admin/knowledge-base-setup'
     },
     {
       title: 'Create Knowledge Base',
-      path: '/bot-component/my-bot/knowledgebaseCreate'
+      path: 'Admin/knowledgebaseCreate'
       
     }
   ]
@@ -64,25 +61,25 @@ export const MENU_SIDEBAR = [{
 //   title: 'KnowledgeBase',
 //   // icon: 'ki-duotone ki-fatrows',
 //   icon: 'ki-duotone ki-file-added',
-//   path: '/bot-component/my-bot/knowledge-base-setup'
+//   path: 'Admin/knowledge-base-setup'
 // }, 
 // {
 //   title: 'KnowledgeBase',
 //   // icon: 'ki-duotone ki-fatrows',
 //   icon: 'ki-duotone ki-file-added',
-//   path: '/bot-component/my-bot/knowledge-base-setup'
+//   path: 'Admin/knowledge-base-setup'
 // }, 
 // {
 //   title: 'Agents',
 //   // icon: 'ki-duotone ki-fingerprint-scanning',
 //   icon: 'ki-duotone ki-focus',
-//   path: '/bot-component/my-bot/knowledge-base-setup'
+//   path: 'Admin/knowledge-base-setup'
 // }, 
 
 {
   title : 'Leads',
   icon: 'ki-duotone ki-fatrows',
-  path: '/bot-component/my-bot/leads'
+  path: 'Admin/leads'
   
 },
 {
@@ -91,20 +88,20 @@ export const MENU_SIDEBAR = [{
   path: '/auth/login'
 },
 // {
-//   path: '/bot-component/my-bot/knowledge-base-setup'
+//   path: 'Admin/knowledge-base-setup'
 // }, 
  
 // {
 //   title: 'Hooks Api',
-//   path: '/bot-component/my-bot/hooks'
+//   path: 'Admin/hooks'
 // }, 
 // {
 //   title: 'Build Bot',
-//   path: '/bot-component/my-bot/bot-build'
+//   path: 'Admin/bot-build'
 // }, 
 // {
 //   title: 'Channel',
-//   path: '/bot-component/my-bot/channel'
+//   path: 'Admin/channel'
 // }, 
  
 
