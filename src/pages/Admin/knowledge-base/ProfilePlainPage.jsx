@@ -17,7 +17,8 @@ const ProfilePlainPage = () => {
         {currentLayout?.name === 'demo1-layout' && <Container>
           <Toolbar>
             <ToolbarHeading>
-              <ToolbarPageTitle />
+              {/* <ToolbarPageTitle /> */}
+              <h2><b>Knowledge</b></h2>
               <ToolbarDescription>Overview of all bots</ToolbarDescription>
             </ToolbarHeading>
             <ToolbarActions>

@@ -1,16 +1,11 @@
 import { Fragment } from 'react';
-import { toAbsoluteUrl } from '@/utils/Assets';
-import { KeenIcon } from '@/components';
 import { Container } from '@/components/container';
-import { UserProfileHero } from '@/partials/heros';
-import { Navbar, NavbarActions, NavbarDropdown } from '@/partials/navbar';
-import { PageMenu } from '@/pages/bot-component';
-
 import { Toolbar, ToolbarActions, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 import { useLayout } from '@/providers';
 import { Link } from 'react-router-dom';
-import { LeadsContent } from '.';
-const LeadsPage = () => {
+// import { ChatbotContent } from '.';
+import { ChatbotContent } from './chatbotcontent';
+const ChatbotPage = () => {
   const {
     currentLayout
   } = useLayout();
@@ -20,21 +15,18 @@ const LeadsPage = () => {
               <Toolbar>
                 <ToolbarHeading>
                   {/* <ToolbarPageTitle /> */}
-                  <h2><b>Leads</b></h2>
-                  <ToolbarDescription>Overview of leads</ToolbarDescription>
+                  <h2><b>Chatbot</b></h2>
+                  <ToolbarDescription>Overview of ChatBot</ToolbarDescription>
                 </ToolbarHeading>
                 <ToolbarActions>
-               
-                {/* <Link to="/Admin/knowledgebaseCreate" className="btn btn-primary btn-sm text-xs font-medium text-white">
-                      Create my bot
-                    </Link> */}
+       
                 </ToolbarActions>
               </Toolbar>
             </Container>}
     
       <Container>
-        <LeadsContent />
+        <ChatbotContent />
       </Container>
     </Fragment>;
 };
-export { LeadsPage };
+export { ChatbotPage };

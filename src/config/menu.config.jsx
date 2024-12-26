@@ -80,7 +80,11 @@ export const MENU_SIDEBAR = [{
   title : 'Leads',
   icon: 'ki-duotone ki-fatrows',
   path: 'Admin/leads'
-  
+},
+{
+  title : 'Chat Bot',
+  icon: 'ki-duotone ki-messages',
+  path: '/Admin/chatbot'
 },
 {
   title: 'Logout',
